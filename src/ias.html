@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" id="icon">
+    <title>Information Assurance and Security</title>
+</head>
+<body class="body" onload="displayModule('ias_mod4', 4)">
+    
+    <!-- Header -->
+    <header>
+        <div>
+            <img id="logo" alt="logo">
+            <h2 class="module-title">Module 4</h2>
+        </div>
+        <div>
+            <img id="btn-home" src="../img/home.png" alt="home" title="back to homepage">
+            <img id="btn-menu" src="../img/menu.png" alt="menu" title="hide/display menu">
+        </div>
+    </header>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="buttons">
+            <h3> Information Assurance and Security </h3>
+            <hr>
+            <div class="mod4" onclick="displayModule('ias_mod4', 4)"> Module 4</div>
+            <div class="mod5" onclick="displayModule('ias_mod5', 5)"> Module 5</div>
+            <div class="mod6" onclick="displayModule('ias_mod6', 6)"> Module 6</div>
+            <div class="mod7" onclick="displayModule('ias_mod7', 7)"> Module 7</div>
+        </div>
+        <div> 
+            <div class="mode"> Switch to Dark Mode</div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        
+        <!-- Module -->
+        <div class="module1 module">
+            <div class="content"></div>
+            <button type="button" id="takeQuiz"> Take Quiz </button>
+            <br><br>
+        </div>
+    </div>
+
+
+    <!-- Quiz Panel -->
+    <div class="quiz-panel">
+        <div class="quiz-panel-header" style="display: flex; align-items: center; position: sticky; top: 0%;">
+            <img id="btn-close" src="../img/close.png" alt="exit icon" title="Close">
+            <h2 class="quiz-title"> QUIZ </h2>
+        </div>
+        <div class="quiz-result">
+            Your score is 0/0. Failed! 
+        </div>
+        <ol class="quiz-questions-list">
+            <!--
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <li class="quiz-item">
+                <input type="text" id="" class="input-answer">
+                <p class="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quia explicabo vel aliquid numquam architecto, tempore laborum placeat tempora.</p>
+                <div class="answer"> Network Security </div>
+            </li>
+            <br>
+            -->
+        </ol>
+        <br>
+        <div class="btn-panel"> <button id="btn-submit"> Submit </button> </div>
+    </div>
+    
+    <!-- Script -->
+    <script src="../script/menu.js"></script>
+    <script src="../script/module.js"></script>
+    <script src="../script/mode.js"></script>
+    <script src="../script/quiz.js"></script>
+    <script src="../script/reload.js"></script>
+    <script src="../script/root.js"></script>
+</body>
+</html>
