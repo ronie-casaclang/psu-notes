@@ -680,7 +680,7 @@ function module(code){
                     <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
                 </ul>
                 <br>
-                <ul style="border: 1px solid; width:max-content; padding: 5px 3px">
+                <ul style="border: 1px solid; max-width:500px; padding: 5px 3px">
                     <li style="list-style:none" before=">"><b>Intelligence </b> - is the ability to acquire and apply knowledge.</li>
                     <li style="list-style:none"><b>Knowledge </b> - is the information acquired through experience.</li>
                     <li style="list-style:none"><b>Experience </b> - is the knowledge gained through exposure (training). </li>
