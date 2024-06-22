@@ -666,6 +666,248 @@ function module(code){
                     <br>
                     <br>
             `;
+        case 'cs6_mod5': return ` 
+        <h2 style="color:goldenrod"> ARTIFICIAL INTELLIGENCE </h2>
+                <br>
+                <h3>Artificial Intelligence (AI)</h3>
+                <ul>
+                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
+                    <li> Artificial defines "man-made," and intelligence defines "thinking power", or “the ability to learn and solve problems” </li>
+                    <li> Artificial Intelligence means "a man-made thinking power." </li>
+                    <li> Branch of computer science by which we can create intelligent machines which can behave like a human, think like humans, and able to make decisions.</li>
+                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
+                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
+                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
+                </ul>
+                <br>
+                <ul style="border: 1px solid; width:max-content; padding: 5px 3px">
+                    <li style="list-style:none" before=">"><b>Intelligence </b> - is the ability to acquire and apply knowledge.</li>
+                    <li style="list-style:none"><b>Knowledge </b> - is the information acquired through experience.</li>
+                    <li style="list-style:none"><b>Experience </b> - is the knowledge gained through exposure (training). </li>
+                </ul>
+                <p>Summing the terms up, we get <b>Artificial Intelligence</b> as the <br>
+                    <i>“copy of something natural (i.e., human beings) WHO ‟is capable of acquiring and applying the information it has gained through exposure.” </i>
+                </p>
+                <br>
+                <p>Intelligence is composed of:</p>
+                <ul>
+                    <li>Reasoning</li>
+                    <li>Learning</li>
+                    <li>Problem Solving</li>
+                    <li>Perception</li>
+                    <li>Lingustic Intelligence</li>
+                </ul>
+                <br>
+                <p>High-profile examples of AI:</p>
+                <ul>
+                    <li>autonomous vehicles (such as drones and self-driving cars)</li>
+                    <li>medical diagnosis, creating art (such as poetry)</li>
+                    <li>proving mathematical theorems</li>
+                    <li>playing games (such as Chess or Go) </li>
+                    <li>search engines (such as Google search)</li>
+                    <li>online assistants (such as Siri)</li>
+                    <li>image recognition in photographs</li>
+                    <li>spam filtering</li>
+                    <li>prediction of judicial decisions and targeting online advertisements</li>
+                </ul>
+                <br>
+                <h2> Machine learning </h2>
+                <ul>
+                    <li>The study of computer algorithms that improve automatically through experience.</li>
+                    <li>The term machine learning was introduced by <b>Arthur Samuel in 1959.</b></li>
+                    <li><b>Neural networks</b> are biologically inspired networks that extract features from the data in a hierarchical fashion. </li>
+                    <li>The field of neural networks with several hidden layers is called <b>deep learning.</b></li>
+                </ul>
+                <br>
+                <p> Need for Artificial Intelligence </p>
+                <ol>
+                    <li> To create expert systems that exhibit intelligent behavior with the capability to learn, demonstrate, explain and advice its users. </li>
+                    <li> Helping machines find solutions to complex problems like humans do and applying them as algorithms in a computer-friendly manner. </li>
+                </ol>
+                <br>
+                <p> Goals of Artificial Intelligence </p>
+                <ol>
+                    <li> Replicate human intelligence </li>
+                    <li> Solve Knowledge-intensive tasks  </li>
+                    <li> An intelligent connection of perception and action </li>
+                    <li> Building a machine which can perform tasks that requires human intelligence such as: </li>
+                    <ul>
+                        <li>Proving a theorem</li>
+                        <li>Playing chess</li>
+                        <li>Plan some surgical operation</li>
+                        <li>Driving a car in traffic</li>
+                    </ul>
+                    <li> Creating some system which can exhibit intelligent behavior, learn new things by itself, demonstrate, explain, and can advise to its user. </li>
+                </ol>
+                <br>
+                <p> What Comprises to Artificial Intelligence? </p>
+                <ul>
+                    <li> Computer Science </li>
+                    <li> Psychology </li>
+                    <li> Sociologogy </li>
+                    <li> Mathematics </li>
+                    <li> Neuron Science </li>
+                    <li> Philosophy </li>
+                    <li> Biology </li>
+                </ul>
+                <br>
+
+                
+                <p style="color: dodgerblue"><i>Advantage and disadvantages of Artificial Intelligence : </i></p>
+                <table style="border: 1px solid; border-collapse:collapse; max-width: 700px">
+                    <tr style="border: 1px solid">
+                        <th style="border: 1px solid"> ADVANTAGES </th>
+                        <th> DISADVANTAGES </th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid"> High Accuracy with fewer errors </td>
+                        <td> High Cost </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> High-Speed  </td>
+                        <td> Can't think out of the box </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> High Reliability </td>
+                        <td> No feelings and emotions </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> Useful for risky areas </td>
+                        <td> Increase dependence on machines</td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> Digital Assistant </td>
+                        <td> No Original Creativity </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> Useful as a public utility </td>
+                        <td> </td>
+                    </tr>
+                </table>
+                <br>
+
+                <h2> History of AI </h2>
+                <p style="color: dodgerblue"><i> A. Maturation of Artificial Intelligence (1943-1952) </i></p>
+                <ul>
+                    <li><b> 1943 </b> - The first work which is now recognized as AI was done by Warren McCulloch and Walter pits in 1943. They proposed a model of artificial neurons. </li> <br>
+                    <li><b> 1949 </b> - Donald Hebb demonstrated an updating rule for modifying the connection strength between neurons. His rule is now called Hebbian learning. </li><br>
+                    <li><b> 1950 </b> - The Alan Turing who was an English mathematician and pioneered Machine learning in 1950. Alan Turing publishes "Computing Machinery and Intelligence" in which he proposed a test. The test can check the machine's ability to exhibit intelligent behavior equivalent to human intelligence, called a Turing test. </li><br>
+                </ul>
+                <p style="color: dodgerblue"><i> B. The birth of Artificial Intelligence (1952-1956)  </i></p>
+                <ul>
+                    <li><b> 1955 </b> - An Allen Newell and Herbert A. Simon created the "first artificial intelligence program" Which was named "Logic Theorist". This program had proved 38 of 52 Mathematics theorems, and find new and more elegant proofs for some theorems. </li><br>
+                    <li><b> 1956 </b> - The word "Artificial Intelligence" first adopted by American Computer scientist John McCarthy at the Dartmouth Conference. For the first time, AI coined as an academic field. At that time high-level computer languages such as FORTRAN, LISP, or COBOL were invented. And the enthusiasm for AI was very high at that time.  </li><br>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i> C. The golden years-Early enthusiasm (1956-1974)  </i></p>
+                <ul>
+                    <li><b> 1966 </b> - The researchers emphasized developing algorithms that can solve mathematical problems. Joseph Weizenbaum created the first chatbot in 1966, which was named as ELIZA </li><br>
+                    <li><b> 1972 </b> - The first intelligent humanoid robot was built in Japan which was named WABOT-1. </li><br>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i> D. The first AI winter (1974-1980)   </i></p>
+                <ul>
+                    <li> The duration between the years 1974 to 1980 was the first AI winter duration.  </li><br>
+                    <li> AI winter refers to the time period where computer scientists dealt with a severe shortage of funding from the government for AI researches.  </li><br>
+                    <li> During AI winters, an interest in publicity on artificial intelligence was decreased.  </li><br>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i> E. A boom of AI (1980-1987) </i></p>
+                <ul>
+                    <li><b> 1980 </b> - After AI winter duration, AI came back with "Expert System". Expert systems were programmed that emulate the decision-making ability of a human expert. </li><br>
+                    <li><b> 1980 </b> - the first national conference of the American Association of Artificial Intelligence was held at Stanford University.  </li><br>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i> F. The second AI winter (1987-1993)  </i></p>
+                <ul>
+                    <li> The duration between the years 1987 to 1993 was the second AI Winter duration.  </li><br>
+                    <li> Again, Investors and government stopped in funding for AI research due to high cost but not efficient results. </li><br>
+                    <li> The expert system such as XCON was very cost-effective.  </li><br>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i> G. The emergence of intelligent agents (1993-2011)  </i></p>
+                <ul>
+                    <li><b> 1997 </b> - In the year 1997, IBM Deep Blue beats world chess champion, Gary Kasparov, and became the first computer to beat a world chess champion.  </li><br>
+                    <li><b> 2002 </b> - for the first time, AI entered the home in the form of Roomba, a vacuum cleaner. </li><br>
+                    <li><b> 2006 </b> - AI came into the Business world until the year 2006. Companies like Facebook, Twitter, and Netflix also started using AI. </li><br>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i> H. Deep learning, big data and artificial general intelligence (2011-present)  </i></p>
+                <ul>
+                    <li><b> 2011 </b> - In the year 2011, IBM's Watson won jeopardy, a quiz show, where it had to solve complex questions as well as riddles. Watson had proved that it could understand natural language and can solve tricky questions quickly.  </li><br>
+                    <li><b> 2012 </b> - Google has launched an Android app feature "Google now", which was able to provide information to the user as a prediction. </li><br>
+                    <li><b> 2014 </b> - Chatbot "Eugene Goostman" won a competition in the infamous "Turing test." </li><br>
+                    <li><b> 2018 </b> - The "Project Debater" from IBM debated on complex topics with two master debaters and also performed extremely well.  </li><br>
+                    <li><b> 2018 </b> - Google has demonstrated an AI program "Duplex" which was a virtual assistant and which had taken hairdresser appointment on call, and the lady on the other side didn't notice that she was talking with the machine.  </li><br>
+                </ul>
+                <br>
+                
+                <br>
+                <h2> Levels of AI </h2>
+                <ol>
+                    <li> Rule-Based Systems </li>
+                    <li> Context Awareness and Retention  </li>
+                    <li> Domain-Specific Expertise </li>
+                    <li> Reasoning Machines </li>
+                    <li> Self Awareness / Artificial General Interface (AGI) </li>
+                    <li> Artificial Superintelligence (ASI) </li>
+                    <li> Singularity and Transcendence </li>
+                </ol>
+                <br>
+                <h2> Types of AI </h2>
+                <p style="color: dodgerblue"><i> A. Based on Capabilities </i></p>
+                <ol>
+                    <li> <b> Weak AI or Narrow AI: </b> able to perform a dedicated task with intelligence</li><br>
+                    <li> <b> General AI:</b> - could perform any intellectual task with efficiency like a human.</li><br>
+                    <li> <b> Super AI:</b> - machines could surpass human intelligence, and can perform any task better than a human with cognitive properties. </li><br>                    
+                </ol>
+                <p style="color: dodgerblue"><i> B. Based on the functionality </i></p>
+                <ol>
+                    <li> <b> Reactive Machines: </b> most basic types of Artificial Intelligence. </li><br>
+                    <li> <b> Limited Memory: </b> use stored data for a limited time period only. </li><br>
+                    <li> <b> Theory of Mind: </b> understand human emotions, people, beliefs, and be able to interact socially like humans. </li><br>
+                    <li> <b> Self-Awareness: </b> it is the future of Artificial Intelligence. </li><br>
+                </ol>
+                <br>
+                <h2> Mapping human thinking to artificial intelligence components </h2>
+                <p> Because AI is the science of simulating human thinking, it is possible to map the human thinking stages to the layers or components of AI systems. </p>
+                <ul>
+                    <li> In the first stage, humans acquire information from their surrounding environments through human senses, such as sight, hearing, smell, taste, and touch, through human organs, such as eyes, ears, and other sensing organs, for example, the hands. </li>
+                    <li> The second stage is related to interpreting and evaluating the input data.</li>
+                    <li> The third stage is related to taking action or making decisions. </li>
+                </ul>
+                <br>
+                <h2> Influencers of artificial intelligence </h2>
+                <ul>
+                    <li> Big data: Structured data versus unstructured data </li>
+                    <li> Advancements in computer processing speed and new chip architectures  </li>
+                    <li> Cloud computing and APIs </li>
+                    <li> The emergence of data science </li>
+                </ul>
+                <br>
+                <h2> Applications of AI </h2>
+                <p> Artificial Intelligence has various applications in today's society. AI is making our daily life more comfortable and faster. </p>
+                <ol>
+                    <li> AI in Agriculture </li>
+                    <li> AI in Healthcare </li>
+                    <li> AI in Education </li>
+                    <li> AI in Finance and E-commerce  </li>
+                    <li> AI in Gaming  </li>
+                    <li> AI in Data Security  </li>
+                    <li> AI in Social Media </li>
+                    <li> AI in Travel & Transport </li>
+                    <li> AI in the Automotive Industry  </li>
+                    <li> AI in Robotics  </li>
+                    <li> AI in Entertainment </li>
+                </ol>
+                <br>
+                <h2> AI tools and platforms </h2>
+                <p>
+                    AI platforms are defined as some sort of hardware architecture or software framework (including application frameworks), that allows the software to run. It involves the use of machines to perform the tasks that are performed by human beings. The platform simulates the cognitive function that human minds perform such as problem-solving, learning, reasoning, social intelligence as well as general intelligence.
+                </p>
+                <br>
+                <br>
+        `;
         default: return 'Empty Module';
     }
 }
