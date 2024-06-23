@@ -674,10 +674,7 @@ function module(code){
                     <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
                     <li> Artificial defines "man-made," and intelligence defines "thinking power", or “the ability to learn and solve problems” </li>
                     <li> Artificial Intelligence means "a man-made thinking power." </li>
-                    <li> Branch of computer science by which we can create intelligent machines which can behave like a human, think like humans, and able to make decisions.</li>
-                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
-                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
-                    <li> Artificial Intelligence is composed of two words Artificial and Intelligence</li>
+                    <li> Branch of computer science by which we can create intelligent machines which can behave like a human, think like humans, and able to make decisions.</li>                    
                 </ul>
                 <br>
                 <ul style="border: 1px solid; max-width:500px; padding: 5px 3px">
@@ -905,6 +902,243 @@ function module(code){
                 <p>
                     AI platforms are defined as some sort of hardware architecture or software framework (including application frameworks), that allows the software to run. It involves the use of machines to perform the tasks that are performed by human beings. The platform simulates the cognitive function that human minds perform such as problem-solving, learning, reasoning, social intelligence as well as general intelligence.
                 </p>
+                <br>
+                <br>
+        `;
+        case 'cs6_mod6': return ` 
+        <h2 style="color:goldenrod"> INTERNET OF THINGS (IoT) </h2>
+                <br>
+                <h3>Overview of IoT</h3>
+                <p>The most important features of IoT include artificial intelligence, connectivity, sensors, active engagement, and small device use. A brief review of these features is given below:</p>
+                <ul>
+                    <li> <b> AI </b> - IoT essentially makes virtually anything “smart”, meaning it enhances every aspect of life with the power of data collection, artificial intelligence algorithms, and networks. </li><br>
+                    <li> <b> Connectivity </b> - New enabling technologies for networking and specifically IoT networking, mean networks are no longer exclusively tied to major providers. Networks can exist on a much smaller and cheaper scale while still being practical. IoT creates these small networks between its system devices. </li><br>
+                    <li> <b> Sensors </b> -  IoT loses its distinction without sensors. They act as defining instruments that transform IoT from a standard passive network of devices into an active system capable of real-world integration.</li><br>
+                    <li> <b> Active Engagement </b> - Much of today's interaction with connected technology happens through passive engagement. IoT introduces a new paradigm for active content, product, or service engagement.</li><br>
+                    <li> <b> Small Devices </b> - Devices, as predicted, have become smaller, cheaper, and more powerful over time. IoT exploits purpose-built small devices to deliver its precision, scalability, and versatility.</li>
+                </ul>
+                <br>
+                <h3>What is IoT? </h3>
+                <p> According to the following : </p>
+                <ul>
+                    <li><b>Internet Architecture Board\'s (IAB)</b> - IoT is the networking of smart objects, meaning a huge number of devices intelligently communicating in the presence of internet protocol that cannot be directly operated by human beings but exist as components in buildings, vehicles or the environment.</li><br>
+                    <li><b>Internet Engineering Task Force (IETF)</b> - IoT is the networking of smart objects in which smart objects have some constraints such as limited bandwidth, power, and processing accessibility for achieving interoperability among smart objects. </li><br>
+                    <li><b>Institute of Electrical and Electronics Engineers (IEEE) </b> - IoT is a framework of all things that have a representation in the presence of the internet in such a way that new applications and services enable the interaction in the physical and virtual world in the form of <b>Machine-to-Machine (M2M)</b> communication in the cloud.</li><br>
+                    <li><b>Oxford Dictionary </b> - IoT is the interaction of everyday object\'s computing devices through the Internet that enables the sending and receiving of useful data. </li><br>
+                    <li><b>2020 Conceptual Framework </b> - the term IoT is expressed through a simple formula such as: <i><code style="border: 1px solid #ccc; padding:5px"> IoT= Services + Data + Networks + Sensors</code></i></li>
+                </ul>
+                <br>
+                <h3>History of IoT </h3>
+                <p>
+                    The Internet of Things has not been around for very long. However, there have been visions of machines communicating with one another since the early 1800s. Machines have been providing direct communications since the <b>Telegraph (the first landline)</b> was developed in the 1830s and 1840s. Described as “wireless telegraphy,” the first radio voice transmission took place on June 3, 1900, providing another necessary component for developing the Internet of Things. The development of computers began in the 1950s. 
+                </p>
+                <p>
+                    The Internet, itself a significant component of the IoT, started out as part of <b>DARPA (Defense Advanced Research Projects Agency) in 1962</b> and evolved into <b>ARPANET in 1969.</b> In the 1980s, commercial service providers began supporting public use of ARPANET, allowing it to evolve into our modern Internet. <b>Global Positioning Satellites (GPS)</b> became a reality in early 1993, with the Department of Defense providing a stable, highly functional system of 24 satellites. This was quickly followed by privately owned, commercial satellites being placed in orbit. Satellites and landlines provide basic communications for much of the IoT. One additional and important component in developing a functional IoT was IPV6\'s remarkably intelligent decision to increase address space. 
+                </p>
+                <p>
+                    The Internet of Things, as a concept, wasn\'t officially named until 1999. One of the first examples of an Internet of Things is from the early 1980s and was a <b>Coca Cola machine</b>, located at the Carnegie Melon University. Local programmers would connect by the Internet to the refrigerated appliance, and check to see if there was a drink available and if it was cold, before making the trip.
+                </p>
+                <p>
+                    By the year 2013, the Internet of Things had evolved into a system using multiple technologies, ranging from the Internet to wireless communication and from <b>Micro-Electromechanical Systems (MEMS)</b> to embedded systems. The traditional fields of automation (including the automation of buildings and homes), wireless sensor networks, GPS, control systems, and others, all support the IoT. 
+                </p>
+                <p>
+                    <b>Kevin Ashton</b>, the Executive Director of Auto-ID Labs at MIT, was the first to describe the Internet of Things, during his 1999 speech. Kevin Ashton stated that <b>Radio Frequency Identification (RFID)</b> was a prerequisite for the Internet of Things. He concluded if all devices were “tagged,” computers could manage, track, and inventory them. To some extent, the tagging of things has been achieved through technologies such as digital watermarking, barcodes, and QR codes. Inventory control is one of the more obvious advantages of the Internet of Things.
+                </p>
+                <br>
+                <p> Advantages of IoT </p>
+                <ul>
+                    <li>Improved Customer Engagement </li>
+                    <li>Technology Optimization</li>
+                    <li>Reduced Waste</li>
+                    <li>Enhanced Data Collection</li>
+                </ul>
+                <br>
+                <p style="color: dodgerblue"><i>Advantage and disadvantages of IoT : </i></p>
+                <table style="border: 1px solid; border-collapse:collapse; max-width: 700px">
+                    <tr style="border: 1px solid">
+                        <th style="border: 1px solid"> ADVANTAGES </th>
+                        <th> DISADVANTAGES </th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid"> Improved Customer Engagement </td>
+                        <td> As the number of connected devices increases and more information is shared between devices, the potential that a hacker could steal confidential information also increases. </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> Technology Optimization   </td>
+                        <td> If there\'s a bug in the system, it\'s likely that every connected device will become corrupted.  </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> Reduced Waste </td>
+                        <td> Since there\'s no international standard of compatibility for IoT, it\'s difficult for devices from different manufacturers to communicate with each other. </td>
+                    </tr>
+                    <tr style="border: 1px solid">
+                        <td style="border: 1px solid"> Enhanced Data Collection </td>
+                        <td> Enterprises may eventually have to deal with massive numbers maybe even millions of IoT devices and collecting and managing the data from all those devices will be challenging.</td>
+                    </tr>
+                </table>
+                <br>
+                <h3> Challenges of IoT </h3>
+                <ul>
+                    <li> Security  </li>
+                    <li> Privacy </li>
+                    <li> Complexity </li>
+                    <li> Flexibility </li>
+                    <li> Compliance </li>
+                </ul>
+                <br>
+                <h3> Architecture of IoT </h3>
+                <ol>
+                    <li><b>Sensing Layer </b>- The main purpose of the sensing layer is to identify any phenomena in the devices\' peripheral and obtain data from the real world.</li><br>
+                    <ul>
+                        <li><b>A. Motion Sensors:</b> measure the change in motion as well as the orientation of the devices. 2 types of motions : <i>linear and angular motions.</i></li><br>
+                        <li><b>B. Environmental Sensors:</b> sensors such as Light sensors, Pressure sensors, etc. are embedded in IoT devices to sense the change in environmental parameters in the device\'s peripheral.</li><br>
+                        <li><b>C. Position sensors:</b> position sensors of IoT devices deal with the physical position and location of the device.</li>
+                    </ul>
+                    <br>
+                    <li><b>Network Layer </b> - The network layer acts as a communication channel to transfer data, collected in the sensing layer, to other connected devices.</li> <br>
+                    <li><b>Data Processing Layer </b> - The data processing layer consists of the main data processing unit of IoT devices.</li> <br>
+                    <li><b>Application Layer </b> - The application layer implements and presents the results of the data processing layer to accomplish disparate applications of IoT devices.</li> <br>
+                </ol>
+                <br>
+                <h3> Devices and Networks </h3>
+                <p>
+                    The devices can be categorized into <b>three main groups: consumer, enterprise and industrial.</b> Consumer connected devices include smart TVs, smart speakers, toys, wearables, and smart appliances. smart meters, commercial security systems and smart city technologies such as those used to monitor traffic and weather conditions are examples of industrial and enterprise IoT devices. Other technologies, including smart air conditioning, smart thermostats, smart lighting, and smart security, span home, enterprise, and industrial uses. <br><br>In the enterprise, smart sensors located in a conference room can help an employee locate and schedule an available room for a meeting, ensuring the proper room type, size and features are available. When meeting attendees enter the room, the temperature will adjust according to the occupancy, and the lights will dim as the appropriate PowerPoint loads on the screen and the speaker begins his presentation.
+                </p>
+                <br>
+                <p> Management for Device and Network in the Internet of Things (M4DN. IoT) </p>
+                <ul>
+                    <li> This solution integrates and controls the individual functionalities of the devices in an IoT network as well as the status and characteristics of this network. </li>
+                    <li> M4DN. IoT defines a management structure in two scopes: local management, where the platform runs in the same environment as the devices, and remote management, where the platform controls the devices in different networks.</li>
+                </ul>
+                <br>
+                
+                <h2> IoT Tools and Platforms </h2>
+                <table style="border: 1px solid; border-collapse:collapse; max-width: 700px">
+                    <tr style="border: 1px solid">
+                        <th style="border: 1px solid"> IoT Platform </th>
+                        <th> Key Features </th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; text-align:center"> KAA </td>
+                        <td style="border: 1px solid">
+                            <ul>
+                                <li> Manage an unlimited number of connected devices </li>
+                                <li> Set up cross-device interoperability </li>
+                                <li> Perform real-time device monitoring </li>
+                                <li> Perform remote device provisioning and configuration </li>
+                                <li> Collect and analyze sensor data </li>
+                                <li> Analyze user behavior and deliver targeted notifications </li>
+                                <li> Create cloud services for smart products </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; text-align:center"> SiteWhere </td>
+                        <td style="border: 1px solid">
+                            <ul>
+                                <li> Run any number of IoT applications on a single SiteWhere instance</li>
+                                <li> Spring delivers the core configuration framework </li>
+                                <li> Add devices through self-registration </li>
+                                <li> Integrates with 3rd-party integration frameworks such as Mule point </li>
+                                <li> Default database storage is MongoDB</li>
+                                <li> Eclipse Californium for CoAP messaging </li>
+                                <li> InfluxDB for event data storage </li>
+                                <li> Grafana to visualize SiteWhere data </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; text-align:center"> ThingSpeak </td>
+                        <td style="border: 1px solid">
+                            <ul>
+                                <li> Collect data in private channels </li>
+                                <li> Share data with public channels </li>
+                                <li> MATLABS analytics and visualizations </li>
+                                <li> Alerts </li>
+                                <li> Event scheduling </li>
+                                <li> App integrations </li>
+                                <li> Worldwide community </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; text-align:center"> DeviceHive </td>
+                        <td style="border: 1px solid">
+                            <ul>
+                                <li> Directly integrate with Alexa </li>
+                                <li> Visualization dahboard of your choice </li>
+                                <li> It supports big data solutions such as ElasticSeach, Apache Spark, Cassandra and Kafka for real-time and batch processing </li>
+                                <li> Connect any device </li>
+                                <li> It comes with Apache Spark and Spark Streaming support </li>
+                                <li> Support libraries written in various programming languages, including Android and iOS libraries </li>
+                                <li> It allows running batch analytics and machine learning on top of your device data </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; text-align:center"> Zetta </td>
+                        <td style="border: 1px solid">
+                            <ul>
+                                <li> Supports a wide range of hacker boards </li>
+                                <li> Zetta allows you to assemble smartphone apps, device apps, and cloud apps </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; text-align:center"> ThingsBoard </td>
+                        <td style="border: 1px solid">
+                            <ul>
+                                <li> Real-time data visualization and remote device control </li>
+                                <li> Customizable rules, plugins, widget and transport implementations </li>
+                                <li> Allows monitoring client-side and provision server-side device atributes </li>
+                                <li> Support multi-tenant installations out-of-the-box </li>
+                                <li> Supports transport encryption for both MQTT and HTTP(s) protocols </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <h3> Applications of IoT </h3>
+                <ul>
+                    <li> Agriculture </li>
+                    <li> Consumer Use </li>
+                    <li> Healthcare </li>
+                    <li> Insurance </li>
+                    <li> Manufacturing </li>
+                    <li> Retail </li>
+                    <li> Transportation </li>
+                    <li> Utilities </li>
+                </ul>
+                <br>
+                <h3> IoT Based Smart Home </h3>
+                <ul>
+                    <li><b> Remote Control Appliances: </b> - Switching on and off remotely appliances to avoid accidents and save energy. </li><br>
+                    <li><b> Weather: </b> - Displays outdoor weather conditions such as humidity, temperature, pressure, wind speed and rain levels with the ability to transmit data over long distances. </li><br>
+                    <li><b> Smart Home Appliances: </b> - Refrigerators with LCD screen telling what\'s inside, food that\'s about to expire, ingredients you need to buy and with all the information available on a smartphone app. Washing machines allowing you to monitor the laundry remotely, and. The kitchen ranges with the interface to a Smartphone app allowing remotely adjustable temperature control and monitoring the oven\'s self-cleaning feature. </li><br>
+                    <li><b> Safety Monitoring: </b> -  cameras, and home alarm systems making people feel safe in their daily life at home. </li><br>
+                    <li><b> Intrusion Detection Systems: </b> - Detection of window and door openings and violations to prevent intruders. </li><br>
+                    <li><b> Energy and Water Use: </b> - Energy and water supply consumption monitoring to obtain advice on how to save cost and resources, & many more.  </li><br>
+                </ul>
+                <br>
+                <h3> IoT Based Smart City </h3>
+                <ul>
+                    <li><b> Structural Health: </b> - Monitoring of vibrations and material conditions in buildings, bridges and historical monuments. </li><br>
+                    <li><b> Lightning: </b> - intelligent and weather adaptive lighting in street lights. </li><br>
+                    <li><b> Safety: </b> - Digital video monitoring, fire control management, public announcement systems. </li><br>
+                    <li><b> Transportation: </b> - Smart Roads and Intelligent High-ways with warning messages and diversions according to climate conditions and unexpected events like accidents or traffic jams. </li><br>
+                    <li><b> Smart Parking: </b> - Real-time monitoring of parking spaces available in the city making residents able to identify and reserve the closest available spaces </li><br>
+                    <li><b> Waste Management: </b> - Detection of rubbish levels in containers to optimize the trash collection routes. Garbage cans and recycle bins with RFID tags allow the sanitation staff to see when garbage has been put out.  </li><br>
+                </ul>
+                <br>
+                <h3> IoT Based Smart Farming </h3>
+                <ul>
+                    <li><b> Green Houses: </b> - Control micro-climate conditions to maximize the production of fruits and vegetables and its quality. </li><br>
+                    <li><b> Compost: </b> - Control of humidity and temperature levels in alfalfa, hay, straw, etc. to prevent fungus and other microbial contaminants. </li><br>
+                    <li><b> Animal Farming/Tracking: </b> - Location and identification of animals grazing in open pastures or location in big stables, Study of ventilation and air quality in farms and detection of harmful gases from excrements. </li><br>
+                    <li><b> Offspring Care: </b> - Control of growing conditions of the offspring in animal farms to ensure its survival and health. </li><br>
+                    <li><b> Field Monitoring: </b> - Reducing spoilage and crop waste with better monitoring, accurate ongoing data obtaining, and management of the agriculture fields, including better control of fertilizing, electricity and watering. </li><br>                    
+                </ul>
                 <br>
                 <br>
         `;
