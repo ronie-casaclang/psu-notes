@@ -126,6 +126,7 @@ function SubmitQuiz(){
     btnSubmit.disabled = true;
 }
 
+
 /* Check Quiz :
 ------------------------------
 1. repeat til end of array(arr)
@@ -153,6 +154,7 @@ function CheckQuiz(arr){
         else answers[i].style.backgroundColor = "rgba(255, 27, 27, 0.2)";
         answers[i].style.display = "block";
         inputAnswer[i].readOnly = true;
+        inputAnswer[i].blur(); //remove focus
     }
     const passingScore = Math.ceil(arr.length/2);
     quizResult.innerText = 'Your score is ' + score + '/' + arr.length + '. ' + (score>=passingScore ? 'Passed!' : 'Failed!');
