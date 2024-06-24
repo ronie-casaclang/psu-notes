@@ -1,7 +1,7 @@
 // elements
 var btnMode = document.querySelector('#btn-mode');
 var btnMode1 = document.querySelector('#btn-mode1');
-var isDark = true; //(2references: SwitchMode(), mode.LoadQuiz())
+var isDark = !true; //(2references: SwitchMode(), mode.LoadQuiz())
 
 // events
 document.addEventListener("DOMContentLoaded", SwitchMode());
