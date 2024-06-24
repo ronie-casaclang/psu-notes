@@ -1,22 +1,46 @@
-//public var - (quiz)
+//public var - (1reference: quiz.takeQuiz(Click))
 var moduleCode = '';
 
 
-
-function displayModule(code, num){
-    //display module content, hide sidebar, set module title, and set quiz title
+/* Display Active Module
+1. set moduleCode as code (public variable)
+2. set active module button bgcolor
+3. set content value from (ModuleContent())
+4. set module title as (Module #)
+5. set quiz title as (QUIZ - Module #)
+6. scroll window into top
+*/
+function DisplayModule(index, code, num){
     moduleCode = code;
-    document.querySelector('.content').innerHTML = module(moduleCode);
+    SetActiveModule(index);
+    document.querySelector('.content').innerHTML = ModuleContent(code);
     document.querySelector('.module-title').innerText = "Module " + num; 
     document.querySelector('.quiz-title').innerText = "QUIZ - Module " + num;
     window.scrollTo({ top: 0, behavior:"smooth" });
 }
 
 
+/* Set Active Module : (1reference: DisplayModule())
+1. create btnModule as array from class (.module-select)
+2. set all btnModule bgcolor (transparent)
+3. set btnModule specified index bgcolor (rgba(219, 219, 219, 0.50)
+*/
+function SetActiveModule(index){
+    var btnModule = document.querySelectorAll(".module-select");
+    for (let i=0; i<btnModule.length; i++)
+        //btnModule[i].style.borderLeft = "unset";
+        btnModule[i].style.background = "transparent";
+    //btnModule[index].style.borderLeft = "5px solid royalblue";
+    btnModule[index].style.background = "rgba(219, 219, 219, 0.50)";
+}
 
-//functions choose display
-function module(code){
-    
+
+/* Set Module Content : (1reference: DisplayModule())
+1. get condition code
+2. return content from true condition
+3. else, return Empty Module
+*/
+function ModuleContent(code){
     switch(code)
     {
         case 'ias_mod4': return ` 
@@ -193,9 +217,9 @@ function module(code){
                     <br>
                     <p><i>Below are the different applications of Asymmetric Encryption </i></p>
                     <ul>
-                        <li><b>Confidentiality</b> - this is achieved by sending critical information by encrypting it with the public key of the receiver and the receiver decrypting it with his own private key</li>
-                        <li><b>Authenticity using Digital Signatures</b> - a sender attaches his private key to the message as a digital signature and exchange with the receiver.</li>
-                        <li><b>Integrity of Information Exchange</b> - one way hash of the data to be exchanged is created and encrypted using the private key of the sender</li>
+                        <li><b>Confidentiality</b> - this is achieved by sending critical information by encrypting it with the public key of the receiver and the receiver decrypting it with his own private key</li><br>
+                        <li><b>Authenticity using Digital Signatures</b> - a sender attaches his private key to the message as a digital signature and exchange with the receiver.</li><br>
+                        <li><b>Integrity of Information Exchange</b> - one way hash of the data to be exchanged is created and encrypted using the private key of the sender</li><br>
                         <li><b>Non-repudiation</b> - the digital signature encryption tool in place, the owner of a document or information who exchanged it with others, cannot disown the content and a transaction done online cannot be disowned by its originator.</li>
                     </ul>
                     <br>
@@ -279,10 +303,6 @@ function module(code){
                         <li>a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.</li>
                         <li>establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet.</li>
                         <li>can be hardware, software, or both. The following are the types of firewalls.</li>
-                    </ul>
-                    <br>
-                    <h3>Firewall</h3>
-                    <ul>
                         <li>enforces access policies, what accessed by network users.</li>
                         <li>put barrier between internal and outer network.</li>
                         <li>it can be a hardware, software, or both.</li>
@@ -295,22 +315,18 @@ function module(code){
                         <li><b>Unified Threat Management (UTM) firewall</b><ul> typically combines, in a loosely coupled way, the functions of a stateful inspection firewall with intrusion prevention and antivirus. It may also include additional services and often cloud management. UTMs focus on simplicity and ease of use. </ul></li><br>
                         <li><b>Next-generation Firewall (NGFW)</b><ul> Most companies are deploying next-generation firewalls to block modern threats such as advanced malware and application-layer attacks.</ul></li><br>
                         <li><b>Threat-focused NGFW</b><ul> These firewalls include all the capabilities of a traditional NGFW and also provide advanced threat detection and remediation..</ul></li><br>
-                        <li><b>Virtual Firewall.</b><ul> typically deployed as a virtual appliance in a private cloud or public cloud  to monitor and secure traffic across physical and virtual networks. A virtual firewall is often a key component in software-defined networks (SDN).</ul></li><br>
+                        <li><b>Virtual Firewall.</b><ul> typically deployed as a virtual appliance in a private cloud or public cloud  to monitor and secure traffic across physical and virtual networks. A virtual firewall is often a key component in software-defined networks (SDN).</ul></li>
                     </ol>
                     <br>
-                    <h3>Static Packet filtering</h3>
+                    <h3>Static Packet Filtering</h3>
                     <ul>
                         <li>firewall technique that controls access to a network by analyzing the incoming and outgoing packets and letting them pass or halting them based on the IP addresses of the source and destination.</li> <br>                        
                     </ul>
                     <h3>Stateful Packet Inspection</h3>
                     <ul>
                         <li> is a computer or router that can monitor and filter the traffic coming across it dynamically, an architecture known as stateful packet inspection (SPI) or dynamic packet filtering.</li> <br>
-                        <li> stateful firewalls are used when security is preferred over speed.</li> <br>                        
-                    </ul>
-                    <br>
-                    <h3>3rd generation Hardware Firewalls</h3>
-                    <ul>
-                        <li> maintain records of all connections passing through the firewall, known as stateful packet inspection.</li> <br>
+                        <li> stateful firewalls are used when security is preferred over speed.</li> <br> 
+                        <li> 3rd generation Hardware Firewalls maintain records of all connections passing through the firewall, known as stateful packet inspection.</li> <br>
                         <li> retain the ability to filter packets and also include a more sophisticated feature in monitoring and updating a dynamic state connection table, this provides a more advanced level of security.</li> <br>
                         <li> it require more processing power, and of course this would increase the cost of the product as well.</li> <br>                        
                     </ul>
@@ -331,7 +347,7 @@ function module(code){
                         <li><b>Symmetric NAT </b> - Each request from the same internal IP address and port to a specific destination IP address and port is mapped to a unique external source IP address and port.</li>                     
                     </ul>
                     <br>
-                    <p> Application Proxy Firewall</p>
+                    <h3> Proxy Firewall</h3>
                     <ul>
                         <li> network security system that protects network resources by filtering messages at the application layer.</li><br>
                         <li> also be called an application firewall or gateway firewall.</li><br>
@@ -390,9 +406,7 @@ function module(code){
                     <li>Attackers like to focus their efforts on servers because they contain valuable data, are a critical part of corporate information systems, and provide an excellent platform from which they can launch additional attacks. It is important to be familiar with these operating systems and know how to harden them against attacks.</li>
                 </ul>
                 <br>
-                <h3>Server Operating Systems</h3>
-                <br>
-                <p><i> The Windows Server Operating Systems </i></p>
+                <p><i style="color:dodgerblue"> The Windows Server Operating Systems </i></p>
                 <ul>
                     <li>Windows Server</li>
                     <ul>
@@ -425,7 +439,7 @@ function module(code){
                 </ul>
                 <br>
 
-                <p><i> The UNIX Server Operating Systems </i></p>
+                <p><i style="color:dodgerblue"> The UNIX Server Operating Systems </i></p>
                 <ul>
                     <li>There are many commercial versions of UNIX for large servers</li>
                     <ul>
@@ -479,10 +493,10 @@ function module(code){
                     <li> dominant software for Linux/Unix</li>
                 </ul>
                 <br>
-                <h3>E-Commerce Service</h3>
+                <h3>E-Commerce </h3>
                 <ul>
-                    <li> refer to the additional software needed for buying and selling, including online catalogs, shopping carts, checkout functions, connections to back-end databases within the firm, and links to outside organizations, such as banks.</li>
-                    <li> needs to have network access to a number of systems external to itself, including servers within firms and servers outside the firm in merchant banks and companies that check credit card numbers for validity</li>
+                    <li> <b>e-commerce service</b> - refer to the additional software needed for buying and selling, including online catalogs, shopping carts, checkout functions, connections to back-end databases within the firm, and links to outside organizations, such as banks.</li>
+                    <li> <b>e-commerce server</b> - needs to have network access to a number of systems external to itself, including servers within firms and servers outside the firm in merchant banks and companies that check credit card numbers for validity</li>
                     <li> The webmaster or e-commerce administrator often has no control over the security of other systems.</li>
                 </ul>
                 <br>
@@ -640,15 +654,15 @@ function module(code){
                         </tr>
                         <tr style="border: 1px solid">
                             <td style="border: 1px solid;"> Complete functionality </td>
-                            <td> More expensive to develop </td>
+                            <td rowspan="2"> More expensive to develop </td>
                         </tr>
                         <tr>
                             <td style="border: 1px solid"> Fully interactive </td>
-                            <td> Time consuming to create </td>
+                            <td> </td>
                         </tr>
                         <tr style="border: 1px solid">
                             <td style="border: 1px solid"> User driven </td>
-                            <td> Not effective for requirements gathering </td>
+                            <td rowspan="2"> Time consuming to create </td>
                         </tr>
                         <tr style="border: 1px solid">
                             <td style="border: 1px solid"> Clear definition of navigation </td>
@@ -656,7 +670,7 @@ function module(code){
                         </tr>
                         <tr style="border: 1px solid">
                             <td style="border: 1px solid"> Look and feel of final product </td>
-                            <td> </td>
+                            <td rowspan="2"> Not effective for requirements gathering </td>
                         </tr>
                         <tr style="border: 1px solid">
                             <td style="border: 1px solid"> Use for explorations and tests </td>
@@ -708,7 +722,7 @@ function module(code){
                     <li>prediction of judicial decisions and targeting online advertisements</li>
                 </ul>
                 <br>
-                <h2> Machine learning </h2>
+                <h2> Machine Learning </h2>
                 <ul>
                     <li>The study of computer algorithms that improve automatically through experience.</li>
                     <li>The term machine learning was introduced by <b>Arthur Samuel in 1959.</b></li>
@@ -750,7 +764,7 @@ function module(code){
                 <br>
 
                 
-                <p style="color: dodgerblue"><i>Advantage and disadvantages of Artificial Intelligence : </i></p>
+                <p style="color: dodgerblue"><i>Advantage and disadvantages of AI : </i></p>
                 <table style="border: 1px solid; border-collapse:collapse; max-width: 700px">
                     <tr style="border: 1px solid">
                         <th style="border: 1px solid"> ADVANTAGES </th>
@@ -774,7 +788,7 @@ function module(code){
                     </tr>
                     <tr style="border: 1px solid">
                         <td style="border: 1px solid"> Digital Assistant </td>
-                        <td> No Original Creativity </td>
+                        <td rowspan="2"> No Original Creativity </td>
                     </tr>
                     <tr style="border: 1px solid">
                         <td style="border: 1px solid"> Useful as a public utility </td>
@@ -866,7 +880,7 @@ function module(code){
                     <li> <b> Self-Awareness: </b> it is the future of Artificial Intelligence. </li><br>
                 </ol>
                 <br>
-                <h2> Mapping human thinking to artificial intelligence components </h2>
+                <h2> Mapping Human Thinking to AI Components </h2>
                 <p> Because AI is the science of simulating human thinking, it is possible to map the human thinking stages to the layers or components of AI systems. </p>
                 <ul>
                     <li> In the first stage, humans acquire information from their surrounding environments through human senses, such as sight, hearing, smell, taste, and touch, through human organs, such as eyes, ears, and other sensing organs, for example, the hands. </li>
@@ -874,7 +888,7 @@ function module(code){
                     <li> The third stage is related to taking action or making decisions. </li>
                 </ul>
                 <br>
-                <h2> Influencers of artificial intelligence </h2>
+                <h2> Influencers of AI </h2>
                 <ul>
                     <li> Big data: Structured data versus unstructured data </li>
                     <li> Advancements in computer processing speed and new chip architectures  </li>
@@ -898,7 +912,7 @@ function module(code){
                     <li> AI in Entertainment </li>
                 </ol>
                 <br>
-                <h2> AI tools and platforms </h2>
+                <h2> AI Tools and Platforms </h2>
                 <p>
                     AI platforms are defined as some sort of hardware architecture or software framework (including application frameworks), that allows the software to run. It involves the use of machines to perform the tasks that are performed by human beings. The platform simulates the cognitive function that human minds perform such as problem-solving, learning, reasoning, social intelligence as well as general intelligence.
                 </p>
@@ -925,7 +939,7 @@ function module(code){
                     <li><b>Internet Engineering Task Force (IETF)</b> - IoT is the networking of smart objects in which smart objects have some constraints such as limited bandwidth, power, and processing accessibility for achieving interoperability among smart objects. </li><br>
                     <li><b>Institute of Electrical and Electronics Engineers (IEEE) </b> - IoT is a framework of all things that have a representation in the presence of the internet in such a way that new applications and services enable the interaction in the physical and virtual world in the form of <b>Machine-to-Machine (M2M)</b> communication in the cloud.</li><br>
                     <li><b>Oxford Dictionary </b> - IoT is the interaction of everyday object\'s computing devices through the Internet that enables the sending and receiving of useful data. </li><br>
-                    <li><b>2020 Conceptual Framework </b> - the term IoT is expressed through a simple formula such as: <i><code style="border: 1px solid #ccc; padding:5px"> IoT= Services + Data + Networks + Sensors</code></i></li>
+                    <li><b>2020 Conceptual Framework </b> - the term IoT is expressed through a simple formula such as: <i><code style="background:rgba(240, 240, 0, 0.2); padding:3px"> IoT= Services + Data + Networks + Sensors</code></i></li>
                 </ul>
                 <br>
                 <h3>History of IoT </h3>
@@ -944,14 +958,6 @@ function module(code){
                 <p>
                     <b>Kevin Ashton</b>, the Executive Director of Auto-ID Labs at MIT, was the first to describe the Internet of Things, during his 1999 speech. Kevin Ashton stated that <b>Radio Frequency Identification (RFID)</b> was a prerequisite for the Internet of Things. He concluded if all devices were “tagged,” computers could manage, track, and inventory them. To some extent, the tagging of things has been achieved through technologies such as digital watermarking, barcodes, and QR codes. Inventory control is one of the more obvious advantages of the Internet of Things.
                 </p>
-                <br>
-                <p> Advantages of IoT </p>
-                <ul>
-                    <li>Improved Customer Engagement </li>
-                    <li>Technology Optimization</li>
-                    <li>Reduced Waste</li>
-                    <li>Enhanced Data Collection</li>
-                </ul>
                 <br>
                 <p style="color: dodgerblue"><i>Advantage and disadvantages of IoT : </i></p>
                 <table style="border: 1px solid; border-collapse:collapse; max-width: 700px">
@@ -1145,7 +1151,3 @@ function module(code){
         default: return 'Empty Module';
     }
 }
-
-
-//Display Module Events
-//displayModule('ias_mod7', 7);

@@ -1,22 +1,26 @@
 // elements
 var btnSubmit = document.getElementById('btn-submit');
-var closeQuiz = document.getElementById('btn-close');
 var quizPanel = document.querySelector('.quiz-panel');
 var quizResult = document.querySelector('.quiz-result');
-var answerPanel = document.querySelectorAll('.answer-panel');
 
 // variables
 var arrCode = [];
 var score = 0;
 let shuffle = [];
 
-// click Event
-closeQuiz.addEventListener('click', ()=>{ closePanel(); });
+// events
 btnSubmit.addEventListener('click', ()=>{ SubmitQuiz(); });
+document.getElementById('btn-close').addEventListener('click', ()=>{ closePanel(); });
 document.getElementById('takeQuiz').addEventListener('click', ()=>{ TakeQuiz(moduleCode); });
 
 
-//Functions
+/* Take Quiz : (1reference)
+1. set condition based on parameter code
+2. load quiz by sending array as parameter
+3. display quiz panel
+4. scroll main window to top
+5. hide the class body overflow 
+*/
 function TakeQuiz(code){
     switch (code){
         case 'ias_mod4': LoadQuiz(ias_mod4); break;
@@ -34,10 +38,59 @@ function TakeQuiz(code){
     document.querySelector('.body').style.overflow = "hidden";
 }
 
-/* Create Questions & Answers :
+/* Load Quiz Content : (1reference)
+1. set shuffle value from shuffleNumber function
+2. set arrCode as arr from parameter (global porpuse)
+3. repeat til not reach arr max limit
+4. set index value from shuffle number array
+5. Create new question by calling the function
+*/
+function LoadQuiz(arr){
+    shuffle = ShuffleNumber(arr.length, 1);
+    arrCode = arr;
+    for (let i=0; i<arr.length; i++){
+        let index = shuffle[i];
+        CreateNewQuestion(arr[index].Q, arr[index].A);
+    }
+    SetInputColor(isDark); //reference from mode.js
+}
+
+/* Shuffle In-between Number : (1reference)
+------------------------------
+1. create empty container for shuffle_number (con)
+2. repeat til container will not reach maximum limit
+3. get random_number from the ranges of (max-min)
+4. when container is empty, then insert random_number into it
+5. compare if not similar the container[value] into random_number, then insert random_number into it
+6. when container is full, return the container
+*/
+function ShuffleNumber(max, min){
+    let con = [];
+    while (con.length < max){
+        let random = Math.floor(Math.random() * (max - min +1));
+        if (con.length == 0) con.push(random);
+        else { if (!HasSimilarity(con, random)) con.push(random); }
+    }
+    return con;
+}
+
+/* Define Similarity : (1reference)
+1. repeat til end of arr(array)
+2. compare arr[value] into num, return true if theres any similarity
+3. return false 
+*/
+function HasSimilarity(arr, num){
+    for (let i=0; i<arr.length; i++){
+        if (arr[i] == num) return true;
+    }
+    return false;
+}
+
+/* Create Questions & Answers : (1reference)
 1. create an element (li, input, p, div)
-2. set element class names
-3. append all element inside ol (list)
+2. set element class names and other properties
+3. append all element inside li (list item)
+4. append li element inside ol (order list)
 */
 function CreateNewQuestion(question, answer){
 
@@ -69,23 +122,7 @@ function CreateNewQuestion(question, answer){
     document.querySelector('.quiz-questions-list').appendChild(li);
 }
 
-/* Load Quiz Content : 
-1. set shuffle array value from shuffleNumber function
-2.
-
-*/
-function LoadQuiz(arr){
-    shuffle = ShuffleNumber(arr.length, 1);
-    arrCode = arr;
-    for (let i=0; i<arr.length; i++){
-        let index = shuffle[i];
-        CreateNewQuestion(arr[index].Q, arr[index].A);
-    }
-    inputColor(dark);
-}
-
-
-/* Close Quiz : 
+/* Close Quiz : (1reference) 
 ------------------------------
 1. scroll to top of quiz panel
 2. reset score to 0
@@ -94,9 +131,7 @@ function LoadQuiz(arr){
 5. display again the scroll/overflow of body/module
 6. enable submit button
 7. repeat til the end of answer_input
-8. remove value of answer input * 
-9. enable answer input * 
-10. hide all answer * 
+8. remove the answer input * 
 */
 function closePanel(){
     quizPanel.scrollTo({ top: 0 });
@@ -112,10 +147,10 @@ function closePanel(){
     }
 }
 
-/* Submit Quiz : 
+/* Submit Quiz : (1reference) 
 ------------------------------
 1. check the result of quiz with array_code
-2. display quiz result
+2. display quiz result (flex/none)
 3. scroll quiz panel to top
 4. disable submit button  
 */
@@ -126,20 +161,19 @@ function SubmitQuiz(){
     btnSubmit.disabled = true;
 }
 
-
-/* Check Quiz :
+/* Check Quiz : (1reference)
 ------------------------------
 1. repeat til end of array(arr)
 2. set index as shuffled number from shuffle[array]
-3. compare arr[value] into answer_input[value] both converted lowercase
+3. compare arr[value] into answer_input[value] both converted into lowercase
 4. increment score by 1
-5. set answer bg_color into green
+5. if equal value, set answer bg_color into green
 6. if false, set answer bg_color into red
 7. display correct answer *
 8. disable answer input *
-9. set and get passing score
-10. set quiz result messages
-11. set quiz result bg_color either (green/red)
+9. set and get passing score : Ceil(size/2)
+10. set quiz result messages (passed/failed) 
+11. set quiz result bg_color (green/red)
 */
 function CheckQuiz(arr){
     var inputAnswer = document.querySelectorAll('input[type=text]');
@@ -154,47 +188,16 @@ function CheckQuiz(arr){
         else answers[i].style.backgroundColor = "rgba(255, 27, 27, 0.2)";
         answers[i].style.display = "block";
         inputAnswer[i].readOnly = true;
-        inputAnswer[i].blur(); //remove focus
     }
     const passingScore = Math.ceil(arr.length/2);
     quizResult.innerText = 'Your score is ' + score + '/' + arr.length + '. ' + (score>=passingScore ? 'Passed!' : 'Failed!');
     quizResult.style.backgroundColor = score>=passingScore ? 'rgba(0, 255, 0, 0.2)' : 'rgba(255, 27, 27, 0.2)';
 }
 
-/* Define Similarity :
-1. repeat til end of arr(array)
-2. compare arr[value] into num, return true if theres any similarity
-3. return false 
-*/
-function HasSimilarity(arr, num){
-    for (let i=0; i<arr.length; i++){
-        if (arr[i] == num) return true;
-    }
-    return false;
-}
-
-/* Shuffle In-between Number :
-------------------------------
-1. create container for shuffle_number
-2. repeat til container will not reach maximum limit
-3. get random_number from the ranges of (max-min)
-4. when container is empty, then insert random_number into it
-5. compare if not similar from container[value] into random_number, then insert random_number into it
-6. when container is full, return the container
-*/
-function ShuffleNumber(max, min){
-    let con = [];
-    while (con.length < max){
-        let random = Math.floor(Math.random() * (max - min +1));
-        if (con.length == 0) con.push(random);
-        else { if (!HasSimilarity(con, random)) con.push(random); }
-    }
-    return con;
-}
 
 
 /* Create List of Modules for IAS :
-1. set module code
+1. set module code as array name
 2. set module answers
 3. set module questions
 */
@@ -222,53 +225,53 @@ var modules = [
         { A:'Intrusion Prevention System', Q:'Scans network traffic to actively block attacks'}
     ],
     ias_mod5 = [
-        { A:'Hashing', Q:'A mathematical operation that converts data into a unique number generated from a string of text. The output is known as message digest'},
-        { A:'Steganography', Q:'Designed to be hidden from a third party. It is data hidden within data, and also an encryption technique that can be used as an extra-secure method in which to protect data.'},
+        { A:'Cryptography', Q:'Exists at the intersection of the disciplines of mathematics, computer science, electrical engineering, communication science, and physics.'},
         { A:'Non-repudiation', Q:'It cannot disown the content and a transaction done online cannot be disowned by its originator.'},
-        { A:'El Gamel', Q:'Digital Signatures and keys are exchanged through this logic.'},
-        { A:'Digital Signature Algorithm', Q:'It will only used in digital signing.'},
-        { A:'Rivest Shamir Adleman', Q:'It is uses for Encryption and Digital Signature.'},
         { A:'Diffie-Hellman Key Agreement', Q:'This was sharing key for exchange of information confidently.'},
+        { A:'Rivest Shamir Adleman', Q:'It is uses for Encryption and Digital Signature.'},
+        { A:'El Gamel', Q:'Digital Signatures and keys are exchanged through this logic.'},
+        { A:'Elliptic Curve Cryptography', Q:'Functions are similar to RSA and it caters to cell devices.'},
+        { A:'Digital Signature Algorithm', Q:'It will only used in digital signing.'},
+        { A:'Data Encryption Standard', Q:'Block cipher designs that have been designated cryptography standards by the US government. Despite its deprecation as an official standard, still remains quite popular'},
         { A:'Data Encryption Standard', Q:'It is used across a wide range of applications, from ATM encryption to email privacy and secure remote access.'},
         { A:'David Kahn', Q:'The first people to systematically document cryptanalytic methods'},
-        { A:'Symmetric-key Cryptography', Q:'Refers to encryption methods in which both the sender and receiver share the same key '},
-        { A:'Steganography', Q:'More modern examples the use of invisible ink, microdots, and digital watermarks to conceal information'},
-        { A:'Kryptos and Graphein', Q:'The term cryptography came from two ancient Greek words'},
-        { A:'Data Encryption Standard', Q:'Block cipher designs that have been designated cryptography standards by the US government. Despite its deprecation as an official standard, still remains quite popular'},
-        { A:'Confidentiality', Q:'This is achieved by sending critical information by encrypting it with the public key of the receiver and the receiver decrypting it with his own private key'},
         { A:'Symmetric Encryption', Q:'Uses One key for encryption and decryption.'},
+        { A:'Symmetric Encryption', Q:'Refers to encryption methods in which both the sender and receiver share the same key.'},
         { A:'Asymmetric Encryption', Q:'Only the encrypted data is exchanged and the public key is available for anyone.'},
+        { A:'Kryptos and Graphein', Q:'The term cryptography came from two ancient Greek words'},
+        { A:'Confidentiality', Q:'This is achieved by sending critical information by encrypting it with the public key of the receiver and the receiver decrypting it with his own private key'},
         { A:'Hashing', Q:'Best used for sending passwords, files and for searching..'},
-        { A:'Elliptic Curve Cryptography', Q:'Functions are similar to RSA and it caters to cell devices.'},
-        { A:'Cryptography', Q:'Exists at the intersection of the disciplines of mathematics, computer science, electrical engineering, communication science, and physics.'},
+        { A:'Hashing', Q:'A mathematical operation that converts data into a unique number generated from a string of text. The output is known as message digest'},
+        { A:'Steganography', Q:'More modern examples the use of invisible ink, microdots, and digital watermarks to conceal information'},
+        { A:'Steganography', Q:'Designed to be hidden from a third party. It is data hidden within data, and also an encryption technique that can be used as an extra-secure method in which to protect data.'},
         { A:'Cryptographic Algorithms', Q:'Designed around computational hardness assumptions, making such algorithms hard to break in actual practice by any adversary.'}
     ],
     ias_mod6 = [
         { A:'Firewall', Q:'A network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.'},
-        { A:'Proxy Firewall', Q:'It serves as the gateway from one network to another for a specific application. Proxy servers can provide additional functionality such as content caching and security by preventing direct connections from outside the network.'},
+        { A:'Firewall', Q:'They establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet.'},
         { A:'Stateful Inspection Firewall', Q:'Allows or blocks traffic based on state, port, and protocol. It monitors all activity from the opening of a connection until it is closed.'},
+        { A:'Stateful Inspection Firewall', Q:'It is a computer or router that can monitor and filter the traffic coming across it dynamically.'},
         { A:'Unified Threat Management Firewall', Q:'Typically combines, in a loosely coupled way, the functions of a stateful inspection firewall with intrusion prevention and antivirus.'},
-        { A:'Next Generation Firewall', Q:'Most companies are deploying it to block modern threats such as advanced malware and application-layer attacks.'},
+        { A:'Next-Generation Firewall', Q:'Most companies are deploying it to block modern threats such as advanced malware and application-layer attacks.'},
         { A:'Threat-focused NGFW', Q:'This also provide advanced threat detection and remediation.'},
         { A:'Virtual Firewall', Q:'It is often a key component in software-defined networks (SDN).'},
         { A:'Virtual Firewall', Q:'Typically deployed as appliance in a private cloud or public cloud to monitor and secure traffic across networks.'},
-        { A:'Static Packet Inspection', Q:'Controls access to a network by analyzing the incoming and outgoing packets and letting them pass or halting them based on the IP addresses of the source and destination.'},
-        { A:'Stateful Firewall', Q:'It is a computer or router that can monitor and filter the traffic coming across it dynamically.'},
-        { A:'3rd Generation Hardware Firewall', Q:'Maintain records of all connections passing through the firewall, known as stateful packet inspection.'},
+        { A:'Static Packet Filtering', Q:'Controls access to a network by analyzing the incoming and outgoing packets and letting them pass or halting them based on the IP addresses of the source and destination.'},
+        { A:'Stateful Packet Inspection', Q:'3rd generation hardware firewall maintain records of all connections passing through the firewall, also known as?.'},
         { A:'Stateful Packet Inspection', Q:'It used when security is preferred over speed.'},
         { A:'Network Address Translate', Q:'It is a router function that enables public and private network connections and allows single IP address communication.'},
         { A:'Network Address Translate', Q:'It was introduced as an effective, timely solution to heavy network volume traffic.'},
+        { A:'Network Address Translate', Q:'It is a method of remapping an IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.'},
         { A:'Port-restricted-cone NAT', Q:'Like an address restricted cone NAT, but the restriction includes port numbers.'},
         { A:'Symmetric NAT', Q:'Each request from the same internal IP address and port to a specific destination IP address and port is mapped to a unique external source IP address and port.'},
+        { A:'Proxy Firewall', Q:'It serves as the gateway from one network to another for a specific application. Proxy servers can provide additional functionality such as content caching and security by preventing direct connections from outside the network.'},
         { A:'Proxy Firewall', Q:'It is a network security system that protects network resources by filtering messages at the application layer.'},
-        { A:'Proxy Firewall', Q:'Considered to be the most secure type of firewall because they prevent direct network contact with other systems.'},
-        { A:'Network Address Translate', Q:'It is a method of remapping an IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.'},
-        { A:'Firewall', Q:'They establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet.'}
+        { A:'Proxy Firewall', Q:'Considered to be the most secure type of firewall because they prevent direct network contact with other systems.'}
     ],
     ias_mod7 = [
         { A:'Host', Q:'In networking, any device with an IP address is called?'},
         { A:'Host Hardening', Q:'It is the process of protecting a host against attacks.'},
-        { A:'Baselines', Q:'Is a set of specific actions to be taken to harden all hosts of a particular type and of particular versions within each type.'},
+        { A:'Security Baselines', Q:'Is a set of specific actions to be taken to harden all hosts of a particular type and of particular versions within each type.'},
         { A:'Systems Administrators', Q:'Employees who manage individual hosts or groups of hosts.'},
         { A:'Microsoft Management Consoles', Q:'Used by an IT employee to manage a server and standardized organization for ease of learning and use.'},
         { A:'Windows Server Security', Q:'Intelligently minimize the number of running programs and utilities by asking questions during installation.'},
@@ -282,10 +285,9 @@ var modules = [
         { A:'WWW Root', Q:'is one level down from the computer\'s true root.'},
         { A:'Buffer Overflow', Q:'It can range from nothing to the crashing of the server, or gaining the ability to execute any command on the server.'},        
         { A:'Host', Q:'This term includes servers, clients, routers, firewalls, and even many mobile phones.'},
-        { A:'Baselines', Q:'You also need this for servers with different functions, such as webservers (Apache, IIS, nginx, etc.) and e-mail servers (Sendmail, Microsoft Exchange, Exim, etc.).'},        
+        { A:'Security Baselines', Q:'You also need this for servers with different functions, such as webservers (Apache, IIS, nginx, etc.) and e-mail servers (Sendmail, Microsoft Exchange, Exim, etc.).'},        
         { A:'Graphical User Interface', Q:'Users spend most time working on this interface.'},
-        { A:'WWW Root', Q:'Particularly owned by a webserver.'},
-        { A:'E-Commerce Server', Q:'The webmaster or administrator often has no control over the security of other systems.'}        
+        { A:'WWW Root', Q:'Particularly owned by a webserver.'}     
     ],
 
     // App Dev & ET
