@@ -32,6 +32,9 @@ function TakeQuiz(code){
         case 'cs6_mod5': LoadQuiz(cs6_mod5); break;
         case 'cs6_mod6': LoadQuiz(cs6_mod6); break;
         case 'cs6_mod7': LoadQuiz(cs6_mod7); break;
+        
+        case 'se1_mod1': LoadQuiz(se1_mod1); break;
+        case 'se1_mod2': LoadQuiz(se1_mod2); break;
     }
     quizPanel.style.display = "block";
     window.scrollTo({ top: 0, behavior:"smooth" });
@@ -437,5 +440,43 @@ var modules = [
         { A:'AR in Games', Q:'This were praised for increasing physical activity in people - you actually have to move around to find your target, for example, Pokémon.'},
         { A:'AR in eSports', Q:'It turns shows into interactive experiences allowing the watchers to become participants.'},
         { A:'AR in the Theater', Q:'In this sector, augmented reality can serve not only for entertainment purposes but also for the purposes of accessibility. '}
+    ],
+    
+    // Soft Eng 1
+    se1_mod1 = [
+        { A:'Software', Q:'is a program or set of programs containing instructions that provide desired functionality.'},
+        { A:'Software', Q:'A proper team of developers is required to design it.'},
+        { A:'Software', Q:'A set of programs to create an application is called?'},
+        { A:'Engineering', Q:'is the process of designing and building something that serves a particular purpose and finds a cost-effective solution to problems.'},
+        { A:'Software Engineering', Q:'is the process of designing, developing, testing, and maintaining software.'},
+        { A:'Software Engineering', Q:'It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software.'},
+        { A:'Software Engineering', Q:'It includes a variety of techniques, tools, and methodologies, including requirements analysis, design, testing, and maintenance.'},        
+        { A:'Program', Q:'It is normally designed by a single developer.'},
+        { A:'Program', Q:'A set of instructions and also called?'},
+        { A:'Modularity', Q:'Breaking the software into smaller, reusable components that can be developed andtested independently.'},
+        { A:'Abstraction', Q:'Hiding the implementation details of a component and exposing only the necessary functionality to other parts of the software'},
+        { A:'Encapsulation', Q:'Wrapping up the data and functions of an object into a single unit, and protecting the internal state of an object from external modifications.'},
+        { A:'Reusability', Q:'Creating components that can be used in multiple projects, which can save time and resources'},
+        { A:'Maintenance', Q:'Regularly updating and improving the software to fix bugs, add new features, and address security vulnerabilities.'},
+        { A:'Testing', Q:'Verifying that the software meets its requirements and is free of bugs.'},
+        { A:'Design Patterns', Q:'Solving recurring problems in software design by providing templates for solving them.'},
+        { A:'Agile Methodologies', Q:'Using iterative and incremental development processes that focus on customer satisfaction, rapid delivery, and flexibility'},
+        { A:'Continous Integration and Deployment', Q:'Continuously integrating the code changes and deploying them into the production environment.'},
+        { A:'As a product', Q:'Dual role of software which it delivers computing potential across networks of Hardware.'},
+        { A:'As a product', Q:'Dual role of software which it enables the Hardware to deliver the expected functionality.'},
+        { A:'As a vehicle for delivering a product', Q:'Dual role of software which it provides system functionality.'},
+        { A:'As a vehicle for delivering a product', Q:'Dual role of software which it controls other software.'},
+        { A:'As a vehicle for delivering a product', Q:'Dual role of software which it helps build other software.'},
+        { A:'Requirements gathering, Design, Implementation, Testing, Deployment, Maintenance', Q:'The software engineering process is a systematic approach to the development of software. It typically involves the following steps: [separated by comma]'}
+    ],
+    se1_mod2 = [
+        { A:'', Q:''},
+        { A:'', Q:''},
+        { A:'', Q:''},
+        { A:'', Q:''},
+        { A:'', Q:''},
+        { A:'', Q:''},
+        { A:'', Q:''},
+        { A:'', Q:''}
     ]
 ];
