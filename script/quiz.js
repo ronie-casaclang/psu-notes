@@ -35,6 +35,9 @@ function TakeQuiz(code){
         
         case 'se1_mod1': LoadQuiz(se1_mod1); break;
         case 'se1_mod2': LoadQuiz(se1_mod2); break;
+        
+        case 'ic1_mod1': LoadQuiz(ic1_mod1); break;
+        case 'ic1_mod2': LoadQuiz(ic1_mod2); break;
     }
     quizPanel.style.display = "block";
     window.scrollTo({ top: 0, behavior:"smooth" });
@@ -500,5 +503,42 @@ var modules = [
         { A:'Big Bang Model', Q:'It is useful for academic software development projects.'},
         { A:'Big Bang Model', Q:'It is an ideal model where requirements are either unknown or final release date is not given.'},
         { A:'Prototyping Model', Q:'The developer and the user meet and define the purpose of the software, identify the needs, etc.'}
+    ],
+    
+    // Personal Development
+    ic1_mod1 = [
+        { A:'Personality', Q:'It refers to all the factors within the person that influence his characteristic ways of behaving, thinking and feeling. It is your image on others.'},
+        { A:'PHYSICAL', Q:'this includes the mode of dressing, manner of walking, posture, body build, health, complexion, and facial expression.'},
+        { A:'INTELLECTUAL', Q:'this refers to how a person talks and what she talks about is what matters in the intellectual component of personality.'},
+        { A:'SOCIAL', Q:'these are good manners or correct manners which are included in this aspect.'},
+        { A:'EMOTIONAL', Q:'this component of personality includes a person’s likes or dislikes, whether he/she is outgoing or shy, whether he/she is calm or nervous, and whether he/she loses his/her temper easily or “keeps her cool.”'},
+        { A:'VALUE SYSTEM', Q:'this includes a person’s attitudes, values, beliefs, and philosophy in life'},
+        { A:'VALUE SYSTEM', Q:'This aspect  is referred to as character.'},
+        { A:'VALUE SYSTEM', Q:'It is shown in the way we judge whether our actions and the actions of others are right or wrong.'},
+        { A:'HEREDITY', Q:'this refers to the influences on your personality that you are born with – a set of genes and chromosomes.'},
+        { A:'ENVIRONMENT', Q:'this is the nurturing aspect of our lives, in which we live and grow up. Environment  would consist of home, school, work, or other places that you spend a lot of timeand interact with.'},
+        { A:'SITUATION', Q:'These are the experiences that each individual person goes through.'},
+        { A:'Sanguine, Choleric, Melancholic, Phlegmatic', Q:'What is the 4 types of temperaments? (separate with comma)'}
+    ],
+    ic1_mod2 = [
+        { A:'SELF-ESTEEM', Q:'is the extent to which you like, accept, and respect yourself.'},
+        { A:'SELF-IMAGE', Q:'is made up of variables such as physical appearance, athletic ability, sense of humor, special talents, morals and ethics, aptitudes, and values and beliefs.'},
+        { A:'High self-esteem', Q:'helps you to meet everyday challenges and stay on course to become all that you can be.'},
+        { A:'Low self-esteem', Q:'often leads to loneliness, anxiety, resentment, irritability and little life satisfaction.'},
+        { A:'Self-confidence', Q:'the difference between feeling unstoppable and feeling scared out of your wits.'},
+        { A:'Self-confidence', Q:'displayed by a pleasant demeanor, a positive outlook on life, friends and satisfaction with life in general.'},
+        { A:'Self-confidence', Q:'Those who lack it are often timid and fear failure.'},
+        { A:'self-improvement plan', Q:'It is a life-long process that changes with your growth and experiences.'},
+        { A:'knowledge, skills and attitudes', Q:'Learning is categorized into three types, which are?'},
+        { A:'knowledge', Q:'It is acquired by reading, attending classes, using internet, talking with others, and life experiences.'},
+        { A:'skills', Q:'It was obtained by learning how to play guitar or other musical instrument through constant practice and repetition.'},
+        { A:'attitudes', Q:'are complex and develop over time. It is your outlook in life – how you respond to people and events. Also, it is guided by the mind.'},
+        { A:'attitude', Q:'It is exceptionally vital for the reason that it drives your behavior.'},
+        { A:'Behavior', Q:'is a manner of acting or reacting under a general set of circumstances.'},
+        { A:'mental attitude', Q:'Your action and body language are results of your?'},
+        { A:'Perception', Q:'is the process of attaining awareness or understanding based on sensory information – an immediate reaction of the senses.'},
+        { A:'image', Q:'It is one of your most important assets.'},
+        { A:'image', Q:'The set of qualities and characteristics that represent perceptions of you as judged by others is your?'},
+        { A:'Etiquette', Q:'refers to the customs or rules of behavior regarded as correct in social and work life.'}
     ]
 ];
