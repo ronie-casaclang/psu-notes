@@ -1270,6 +1270,139 @@ function ModuleContent(code){
                 </ul>
                 <br>
         `;
+
+        case 'sipp_mod11': return ` 
+        <h2 style="color:goldenrod"> AUGMENTED REALITY (AR) </h2>
+                <br>
+                <h3>Overview of Augmented reality (AR)</h3>
+                <p>
+                    The fundamental idea of AR is to combine, or mix, the view of the real environment with additional, virtual content that is presented through computer graphics. Its convincing effect is achieved by ensuring that the virtual content is aligned and registered with the real objects. As a person moves in an environment and their perspective view of real objects changes, the virtual content should also be presented from the same perspective. <br><br>
+                    Augmented reality is a form of emerging technology that allows users to overlay computer-generated content in the real world. AR refers to a live view of a physical real-world environment whose elements are merged with augmented computer-generated images creating a mixed reality. The augmentation is typically done in real-time and in semantic context with environmental elements. By using the latest AR techniques and technologies, the information about the surrounding real world becomes interactive and digitally usable. Through this augmented vision, a user can digitally interact with and adjust information about their surrounding environment. <br><br>
+                    Augmented reality  as a real-time direct or indirect view of a physical real-world environment that has been enhanced/augmented by adding virtual computer-generated information to it. Augmented reality is the integration of digital information with the user's environment in real-time. Unlike virtual reality, which creates a totally artificial environment, augmented reality uses the existing environment and overlays new information on top of it. A live direct or indirect view of a physical, real-world environment whose elements are augmented by computer-generated sensory input such as sound, video, graphics or GPS data.
+                </p>
+                <br><br>
+                <h3> Virtual reality (VR), Augmented Reality (AR) vs Mixed reality (MR) </h3>
+                <p>
+                    With constant development in computer vision and the exponential advancement of computer processing power, virtual reality (VR), augmented reality (AR), and mixed reality (MR) technology is becoming more and more prominent. With some overlap in the applications and functions of these emerging technologies, sometimes these terms get confused or are used incorrectly.                    
+                </p>
+                <br><br>
+                <h3> Virtual Reality (VR) </h3>
+                <ul>
+                    <li> VR is fully immersive, which tricks your senses into thinking you\'re in a different environment or world apart from the real world. Using a head-mounted display (HMD) or headset, you\'ll experience a computer-generated world of imagery and sounds in which you can manipulate objects and move around using haptic controllers while tethered to a console or PC. It is also calleda computer-simulated reality. It refers to computer technologies using reality headsets to generate realistic sounds, images and other sensations that replicate a real environment or create an imaginary world. Advanced VR environment will engage all five senses (taste, sight, smell, touch, sound), but it is important to say that this is not always possible. </li><br>
+                    <li> Using VR devices such as HTC Vive, Oculus Rift or Google Cardboard, users can be transported into a number of real-world and imagined environments. </li><br>
+                    <li> The most advanced VR experiences even provide freedom of movement - users can move in a digital environment and hear sounds. Moreover, special hand controllers can be used to enhance VR experiences.</li><br>
+                    <li>Most VR headsets are connected to a computer (Oculus Rift) or a gaming console (PlayStation VR) but there are standalone devices (Google Cardboard is among the most popular) as well. Most standalone VR headsets work in combination with smartphones - you insert a smartphone, wear a headset, and immerse in the virtual reality. </li><br>
+                </ul>
+                <br>
+                <h3> Augmented Reality (AR) </h3>
+                <ul>
+                    <li> In augmented reality, users see and interact with the real world while digital content is added to it. If you own a modern smartphone, you can easily download an AR app and try this technology. </li><br>
+                    <li> There\'s a different way to experience augmented reality, though - with special AR headsets, such as Google Glass, where digital content is displayed on a tiny screen in front of a user\'s eye. </li><br>
+                    <li> AR adds digital elements to a live view often by using the camera on a smartphone. Examples of augmented reality experiences include Snapchat lenses and the game Pokemon Go. Augmented Reality (AR) is a live, direct or indirect view of a physical, real-world environment whose elements are augmented (or supplemented) by computer-generated sensory input such as sound, video, graphics or GPS data.</li><br>
+                </ul>
+                <br>
+                <h3> Mixed Reality (MR) </h3>
+                <ul>
+                    <li> Mixed Reality (MR), sometimes referred to as hybrid reality, is the merging of real and virtual worlds to produce new environments and visualizations where physical and digital objects co-exist and interact in real-time. It means placing new imagery within a real space in such a way that the new imagery is able to interact, to an extent, with what is real in the physical world we know. </li><br>
+                    <li> For example, with MR, you can play a virtual video game, grab your real-world water bottle, and smack an imaginary character from the game with the bottle. Imagination and reality have never been so intermingled. The key characteristic of MR is that the synthetic content and the real-world content are able to react to each other in real-time. </li><br>
+                    <li> In mixed reality, you interact with and manipulate both physical and virtual items and environments, using next-generation sensing and imaging technologies. MR allows you to see and immerse yourself in the world around you even as you interact with a virtual environment using your own hands—all without ever removing your headset. </li><br>
+                </ul>
+                <br><br>
+                <h3> The architecture of AR Systems </h3>
+                <p><i> The first Augmented Reality Systems (ARS) were usually designed with a basis on three main blocks :</i></p>
+                <ol>
+                    <li> <b> Infrastructure Tracker Unit </b> - it was responsible for collecting data from the real world, sending them to the Processing Unit.</li><br>
+                    <li> <b> Processing Unit </b> - which mixed the virtual content with the real content and sent the result to the Video Out module of the Visual Unit. Some designs used a Video In, to acquire required data for the Infrastructure Tracker Unit. </li><br>
+                    <li> <b> Visual Unit </b> - can be classified into two types of system, depending on the followed visualization technology:</li><br>
+                    <ol>
+                        <li> <b>  Video see-through: </b> - It uses a Head-Mounted Display (HMD) that employs a video-mixing and displays the merged images on a closed-view HMD. </li><br>
+                        <li> <b>  Optical see-through: </b> - It uses an HMD that employs optical combiners to merge the images within an open-view HMD. </li><br>
+                    </ol>
+                </ol>
+                <br>
+                <h3> Head-Mounted Display (HMD) </h3>
+                <ul>
+                    <li> HMDs are currently the dominant display technology in the AR field. However, they lack in several aspects, such as ergonomics, high prices and relatively low mobility due to their sizes and connectivity features. </li><br>
+                    <li> An additional problem involving HMD is the interaction with the real environment, which places virtual interactive zones to the user, making the collision with these zones hard due to the difficulty to interact with multiple points in different depths. </li><br>
+                    <li> Alternative approaches to developing ARS involve the use of monitors and tablets. Monitors are used as an option for indirect view since the user does not look directly into the mixed world. </li><br>
+                    <li> Tablets are used in direct view since the user points the camera to the scene and looks directly into the mixed world. Both approaches still have difficulties in getting a collision. </li>
+                </ul>
+                <br>
+                <h3> Applications of AR Systems </h3>
+                <ul>
+                    <li> Technology is ever-changing and ever-growing. One of the newest developing technologies is augmented reality (AR), which can be applied to many different disciplines such as education, medicine, entertainment, military, etc. Let us see some of its applications. </li>
+                </ul>
+                <br>
+                <h3> AR in Education </h3>
+                <ul>
+                    <li> Augmented reality allows flexibility in use that is attractive to education. AR technology can be utilized through a variety of mediums including desktops, mobile devices, and smartphones. The technology is portable and adaptable to a variety of scenarios. </li><br>
+                    <li> AR can be used to enhance content and instruction within the traditional classroom, supplement instruction in the special education classroom, extend content into the world outside the classroom, and be combined with other technologies to enrich their individual applications. </li><br>
+                </ul>
+                <br>
+                <p><i> The following reasons for using augmented reality in education: </i></p>
+                <ul>
+                    <li> <b> Affordable learning materials </b> - posters, digital illustrations, physical models, prototypes are very expensive and it\'s impossible for schools to find enough money to purchase all the supplementary materials they would like to. Using AR technology allows for avoiding investments in physical materials. Besides, students can get access to learning materials and interact with them anytime.</li><br>
+                    <li> <b> Interactive lessons </b> - when AR technology is used in classrooms, students can view models on their own smartphones and get a better idea of the concepts they are studying. That increases engagements and reinforces the learning.</li><br>
+                    <li> <b> Higher engagement </b> - when teachers integrate augmented reality into their lectures, they attract the attention of their students and make lessons more effective. When students are interested, it is much easier to make them work more productively.</li><br>
+                    <li> <b> Higher retention </b> - using the AR app, students can get access to augmented models that represent any real objects from a famous monument or work of art to a molecule. Besides, students can get access to a website with specific information. When learning with AR technology, students use different senses and retain more knowledge for a long time. </li><br>
+                    <li> <b> Boost intellectual curiosity </b> - augmented reality makes students more excited about learning certain subjects. Modern students were born in a digital era so they will always be excited with innovative technologies that can help them learn new ideas and develop their critical thinking skills .</li><br>
+                    <li> When using AR technology in the classroom, teachers can create an authentic learning environment for students with different learning styles .</li>
+                </ul>
+                <br>
+                <h3> AR In Medicine </h3>
+                <ul>
+                    <li> Augmented reality is one of the current technologies changing all industries, including healthcare and medical education. </li><br>
+                    <li> The purpose of any invention and technology is to simplify our life. Augmented reality has the potential to play a big role in improving the healthcare industry. Only a few years since the first implementations of augmented reality in medicine, it has already filled an important place in doctors\' and nurses\' routine, as well as patients\' lives. </li><br>
+                    <li> This new technology is enhancing medicine and healthcare towards more safety and efficiency. </li><br>
+                    <li> augmented reality has already made significant changes in the following medical areas: </li><br>
+                    <ul>
+                        <li> surgery (minimally invasive surgery); </li>
+                        <li> education of future doctors; </li>
+                        <li> diagnostics; </li>
+                        <li> AR tools may also aid to detect the signs of depression and other mental illnesses by reading from facial expressions, voice tones, and physical gestures. </li>
+                    </ul>
+                </ul>
+                <br>
+                <p><i> In medicine, AR has the following applications: </i></p>
+                <ol>
+                    <li><b> Describing symptoms </b> - Have you ever been in a situation when it was hard to describe to the doctor what was bothering you? It is a common problem for all us, the roots of which extend to overreacting and lack of knowledge. And what is most important, it impacts on finding out the accurate diagnosis. The first steps to find the solutions are already made. To increase patients\' education, medical app AyeDecide is using augmented reality to show the simulation of the vision, harmed by the different diseases. It helps patients to understand their conditions and describe correctly their symptoms.</li><br>
+                    <li><b> Nursing care </b> - About 40% of the first intravenous injections fail, and this ratio is even higher in the case of children and elderly patients. The AccuVein uses augmented reality to cope with this negative statistic. A handheld scanner projects on the skin and shows the patients\' veins. It increases the successful finding of the vein from the first try in 3,5 times. That is why this invention got the greatest recognition among the general public and medical staff.</li><br>
+                    <li><b> Surgery </b> - In no sphere augmented reality does not have such practical application as in the medicine, especially in surgery, where it literally helps to save lives. Three-dimensional reconstructions of organs or tumors will help surgeons become more efficient at surgery operations. For example, spinal surgery, as usually, is a long and difficult process. But with the use of AR, it can reduce the time, cut the risks and improve the results. The Israeli startup Augmedics had created an augmented reality headset for spine surgeons. This technology overlays a 3D model of the CT-scan on the spine, so, the surgeon gets some kind of ―X-ray‖ vision. </li><br>
+                    <li><b> Ultrasounds </b> - Some time ago ultrasound made a small revolution in medicine. Today, it has another one chance to make the same with using augmented reality. Already a few AR software companies developed handy ultrasound scanner, which with the help of smart glasses works as a traditional one. It is hard to overestimate the usefulness of this technology. Especially when we talk about using it in the developing countries, in military medicine (on the battlefields) and even in the ambulance. </li><br>
+                    <li><b> Diabetes management </b> - In 2017, the number of people struggle with diabetes reached up to 425 million adults worldwide. And the amount of diagnosed people is increasing every year. In 2014, Google revealed the plans for creating a smart contact lens (Google Contact Lens), in which the main function will be to measure the glucose levels in the tears. It will help people with this disease to live the life they used to, without permanent worries about sugar level in the blood. </li><br>
+                    <li><b> Navigation </b> - The using AR in navigation apps has already become a ―traditional‖ way. By pointing your phone to the city landscape, you get the information about nearby objects of your interest (museums, hotels, shops, metro stations, etc.). The same way AR can be useful to provide information about the nearest hospitals. For example, the EHBO app helps to find the nearest to you AEDs (automated external defibrillators). </li><br>                    
+                </ol>
+                <br>
+                <p><i> Generally, AR provides the following benefits to patients and healthcare workers: Reduce the risks associated with minimally invasive surgery. </i></p>
+                <ul>
+                    <li>Better informed decisions about the right treatment and illness prevention. </li>
+                    <li>Make procedures more tolerable.</li>
+                    <li>Better aftercare</li>
+                    <li>Medical training and education.</li>
+                    <li>Assistance in medical procedures and routine tasks.</li>
+                </ul>
+                <br>
+                <h3> AR in Entertainment </h3>
+                <p>
+                    Augmented reality can be used in various ―entertainment‖ industries as entertainment covers quite a number of different industries - music, movies, live shows, games - and all of them can benefit from using augmented reality.
+                </p>
+                <ul>
+                    <li> <b>AR in games </b> - the AR games were praised for increasing physical activity in people - you actually have to move around to find your target, for example, Pokémon. At the same time, there are complaints that players could cause various incidents and accidents being too engrossed in the game. In any case, Pokémon GO has rightfully earned its popularity and opened the world of AR games to us. </li><br>
+                    <li> <b>AR in music </b> - music is not only about listening to favorite tracks and putting together playlists. When we like a piece, we often want to find out more about its background: the performers\' bios, the lyrics of the song, the making of the recording or the music video. Augmented reality can do all that and much more providing complete information on the track or its performer. Augmented reality can enhance live performances by illustrating the story told by a track or displaying the way it was created by the band. </li><br>
+                    <li> <b>AR on TV </b> - this may seem a bit far-fetched, as television already shows a virtual world, thus adding augmented reality will raise it to the second power. However, some experiments of fusing augmented reality on TV are already being made with the promise of future enhancements. One way of integrating augmented reality in television is adding supplementary information to what is going on the TV screen - such as match scores, betting options, and the like. </li><br>
+                    <li> <b>AR in eSports </b> - recently, the industry of eSports has been gaining popularity in all parts of the globe. Competitive online gaming has become as fascinating as real sports, and the technology is following it closely with new solutions and unusual implementations. Augmented reality turns eSports shows into interactive experiences allowing the watchers to become participants.  </li><br>
+                    <li> <b>AR in the theater </b> - in this sector, augmented reality can serve not only for entertainment purposes but also for the purposes of accessibility. The possibility to overlay virtual objects over the real environment can be used, for example, for subtitling in various theater shows. Now, many theaters use LED displays either to provide subtitles for translation or to assist hearing-impaired visitors. However, LED equipment is not available in each theater and even when it is, it can distract the viewers from the show. </li><br>
+                </ul>
+                <br>
+        `;
+        case 'sipp_mod1': return '<h2 style="color:goldenrod"> OVERVIEW OF ETHICS </h2>';
+        case 'sipp_mod2': return '<h2 style="color:goldenrod"> ETHICS FOR ICT PROFESSIONALS AND ICT USERS </h2>';
+        case 'sipp_mod3': return '<h2 style="color:goldenrod"> PRIVACY </h2>';
+        case 'sipp_mod4': return '<h2 style="color:goldenrod"> FREEDOM OF EXPRESSION </h2>';
+        case 'sipp_mod5': return 'OVERVIEW OF ETHICS';
+        case 'sipp_mod6': return 'OVERVIEW OF ETHICS';
+        case 'sipp_mod7': return 'OVERVIEW OF ETHICS';
+        case 'sipp_mod8': return 'OVERVIEW OF ETHICS';
         default: return 'Empty Module';
     }
 }

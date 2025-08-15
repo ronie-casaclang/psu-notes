@@ -38,6 +38,19 @@ function TakeQuiz(code){
         
         case 'ic1_mod1': LoadQuiz(ic1_mod1); break;
         case 'ic1_mod2': LoadQuiz(ic1_mod2); break;
+        
+        case 'pe1_mod2_1': LoadQuiz(pe1_mod2_1); break;
+        case 'pe1_mod2_2': LoadQuiz(pe1_mod2_2); break;
+        case 'pe1_mod2_3': LoadQuiz(pe1_mod2_3); break;
+        
+        case 'sipp_mod1': LoadQuiz(sipp_mod1); break;
+        case 'sipp_mod2': LoadQuiz(sipp_mod2); break;
+        case 'sipp_mod3': LoadQuiz(sipp_mod3); break;
+        case 'sipp_mod4': LoadQuiz(sipp_mod4); break;
+        case 'sipp_mod5': LoadQuiz(sipp_mod5); break;
+        case 'sipp_mod6': LoadQuiz(sipp_mod6); break;
+        case 'sipp_mod7': LoadQuiz(sipp_mod7); break;
+        case 'sipp_mod8': LoadQuiz(sipp_mod8); break;
     }
     quizPanel.style.display = "block";
     window.scrollTo({ top: 0, behavior:"smooth" });
@@ -540,5 +553,145 @@ var modules = [
         { A:'image', Q:'It is one of your most important assets.'},
         { A:'image', Q:'The set of qualities and characteristics that represent perceptions of you as judged by others is your?'},
         { A:'Etiquette', Q:'refers to the customs or rules of behavior regarded as correct in social and work life.'}
+    ],
+    
+    
+    // Professional Elective
+    pe_mod2_1 = [
+        { A:'Personality', Q:'It refers to all the factors within the person that influence his characteristic ways of behaving, thinking and feeling. It is your image on others.'},
+        { A:'PHYSICAL', Q:'this includes the mode of dressing, manner of walking, posture, body build, health, complexion, and facial expression.'},
+        { A:'INTELLECTUAL', Q:'this refers to how a person talks and what she talks about is what matters in the intellectual component of personality.'},
+        { A:'SOCIAL', Q:'these are good manners or correct manners which are included in this aspect.'},
+        { A:'EMOTIONAL', Q:'this component of personality includes a person’s likes or dislikes, whether he/she is outgoing or shy, whether he/she is calm or nervous, and whether he/she loses his/her temper easily or “keeps her cool.”'},
+        { A:'VALUE SYSTEM', Q:'this includes a person’s attitudes, values, beliefs, and philosophy in life'},
+        { A:'VALUE SYSTEM', Q:'This aspect  is referred to as character.'},
+        { A:'VALUE SYSTEM', Q:'It is shown in the way we judge whether our actions and the actions of others are right or wrong.'},
+        { A:'HEREDITY', Q:'this refers to the influences on your personality that you are born with – a set of genes and chromosomes.'},
+        { A:'ENVIRONMENT', Q:'this is the nurturing aspect of our lives, in which we live and grow up. Environment  would consist of home, school, work, or other places that you spend a lot of timeand interact with.'},
+        { A:'SITUATION', Q:'These are the experiences that each individual person goes through.'},
+        { A:'Sanguine, Choleric, Melancholic, Phlegmatic', Q:'What is the 4 types of temperaments? (separate with comma)'}
+    ],
+    pe_mod2_2 = [
+        { A:'SELF-ESTEEM', Q:'is the extent to which you like, accept, and respect yourself.'},
+        { A:'SELF-IMAGE', Q:'is made up of variables such as physical appearance, athletic ability, sense of humor, special talents, morals and ethics, aptitudes, and values and beliefs.'},
+        { A:'High self-esteem', Q:'helps you to meet everyday challenges and stay on course to become all that you can be.'},
+        { A:'Low self-esteem', Q:'often leads to loneliness, anxiety, resentment, irritability and little life satisfaction.'},
+        { A:'Self-confidence', Q:'the difference between feeling unstoppable and feeling scared out of your wits.'},
+        { A:'Self-confidence', Q:'displayed by a pleasant demeanor, a positive outlook on life, friends and satisfaction with life in general.'},
+        { A:'Self-confidence', Q:'Those who lack it are often timid and fear failure.'},
+        { A:'self-improvement plan', Q:'It is a life-long process that changes with your growth and experiences.'},
+        { A:'knowledge, skills and attitudes', Q:'Learning is categorized into three types, which are?'},
+        { A:'knowledge', Q:'It is acquired by reading, attending classes, using internet, talking with others, and life experiences.'},
+        { A:'skills', Q:'It was obtained by learning how to play guitar or other musical instrument through constant practice and repetition.'},
+        { A:'attitudes', Q:'are complex and develop over time. It is your outlook in life – how you respond to people and events. Also, it is guided by the mind.'},
+        { A:'attitude', Q:'It is exceptionally vital for the reason that it drives your behavior.'},
+        { A:'Behavior', Q:'is a manner of acting or reacting under a general set of circumstances.'},
+        { A:'mental attitude', Q:'Your action and body language are results of your?'},
+        { A:'Perception', Q:'is the process of attaining awareness or understanding based on sensory information – an immediate reaction of the senses.'},
+        { A:'image', Q:'It is one of your most important assets.'},
+        { A:'image', Q:'The set of qualities and characteristics that represent perceptions of you as judged by others is your?'},
+        { A:'Etiquette', Q:'refers to the customs or rules of behavior regarded as correct in social and work life.'}
+    ],
+    pe_mod2_3 = [
+        { A:'SELF-ESTEEM', Q:'is the extent to which you like, accept, and respect yourself.'},
+        { A:'SELF-IMAGE', Q:'is made up of variables such as physical appearance, athletic ability, sense of humor, special talents, morals and ethics, aptitudes, and values and beliefs.'},
+        { A:'High self-esteem', Q:'helps you to meet everyday challenges and stay on course to become all that you can be.'},
+        { A:'Low self-esteem', Q:'often leads to loneliness, anxiety, resentment, irritability and little life satisfaction.'},
+        { A:'Self-confidence', Q:'the difference between feeling unstoppable and feeling scared out of your wits.'},
+        { A:'Self-confidence', Q:'displayed by a pleasant demeanor, a positive outlook on life, friends and satisfaction with life in general.'},
+        { A:'Self-confidence', Q:'Those who lack it are often timid and fear failure.'},
+        { A:'self-improvement plan', Q:'It is a life-long process that changes with your growth and experiences.'},
+        { A:'knowledge, skills and attitudes', Q:'Learning is categorized into three types, which are?'},
+        { A:'knowledge', Q:'It is acquired by reading, attending classes, using internet, talking with others, and life experiences.'},
+        { A:'skills', Q:'It was obtained by learning how to play guitar or other musical instrument through constant practice and repetition.'},
+        { A:'attitudes', Q:'are complex and develop over time. It is your outlook in life – how you respond to people and events. Also, it is guided by the mind.'},
+        { A:'attitude', Q:'It is exceptionally vital for the reason that it drives your behavior.'},
+        { A:'Behavior', Q:'is a manner of acting or reacting under a general set of circumstances.'},
+        { A:'mental attitude', Q:'Your action and body language are results of your?'},
+        { A:'Perception', Q:'is the process of attaining awareness or understanding based on sensory information – an immediate reaction of the senses.'},
+        { A:'image', Q:'It is one of your most important assets.'},
+        { A:'image', Q:'The set of qualities and characteristics that represent perceptions of you as judged by others is your?'},
+        { A:'Etiquette', Q:'refers to the customs or rules of behavior regarded as correct in social and work life.'}
+    ],
+    
+    
+    // Social Issues and Professional Practices
+    sipp_mod1 = [
+        { A:'Ethics', Q:'also called moral philosophy, the discipline concerned with what is morally good and bad and morally right and wrong'},
+        { A:'Relativism', Q:'the theory that there is no universal moral norm of right and wrong.'},
+        { A:'Subjective Relativism', Q:'holds that each person decides right and wrong for himself/herself.'},
+        { A:'Cultural Relativism', Q:'the ethical theory that the meaning of “right” and “wrong” rests with a society’s actual moral guidelines.'},
+        { A:'Divine Command Theory', Q:'based on the idea that good actions are those aligned with the will of God and bad actions are those contrary to the will of God.'},
+        { A:'Ethical Egoism', Q:' the philosophy that each person should focus exclusively on his or her self- interest.'},
+        { A:'Consequentialism', Q:'It is the consequence of an action which determines whether or not the action is moral.'},
+        { A:'Utilitarianism', Q:'the philosophy that the right action is the one that produces the most intrinsic good for everyone affected.'},
+        { A:'Kantianism', Q:'This theory emphasizes the type of action rather than the consequences of that action.'},
+        { A:'Immanuel Kant', Q:'Deontology is an obligation-based theory whose chief author was?'},
+
+        { A:'ETHICS', Q:'Describes standards or codes of behavior expected of an individual by a group to which an individual belongs.'},
+        { A:'MORALS', Q:'Principles or habits with respect to right or wrong conduct. While it also prescribe dos and don`ts'},
+        { A:'Morality', Q:'It seems to be used in two distinct broad senses: a descriptive sense and a normative sense.'},
+        { A:'Law', Q:'A system of rules that tells us what we can and cannot do. This are enforced by a set of institutions.'}
+    ],
+    sipp_mod2 = [
+        { A:'Analyst Programmer', Q:'Write, test, design and develop computer software and programs.'},
+        { A:'AV Technician', Q:'Provide technical support for the production, recording, and broadcasting of media.'},
+        { A:'Business Analyst', Q:'Evaluate and develop technology systems to help businesses run at optimal standards.'},
+        { A:'Chief Information Officers', Q:'dWatch over organizations’ IT and telecommunication systems.'},
+        { A:'Database and Systems Administrators and ICT Security', Q:' Maintain and operate databases, computer systems, IT security systems and networks.'},
+        { A:'IT Manager', Q:'Organize and run IT departments in companies and organizations.'},
+        { A:'IT Sales Professionals', Q:'Facilitate selling hardware, software and other information and communications technology.'},
+        { A:'IT Security Specialist', Q:'Develop and maintain secure database management systems for organizations.'},
+        { A:'IT Support and Test Engineers', Q:'Follow procedures and strategies to support, manage and test technical quality systems.'},
+        { A:'IT Support Technician', Q:'Assist in the planning, installation and performance of computer systems and technology.'},
+        { A:'IT Trainer', Q:'Plan and conduct IT training programs, and write user manuals for clients.'},
+        { A:'Motion Graphics Designer', Q:'Use software and techniques to create digital or visual graphic images for web, television and film.'},
+        { A:'Network Professional', Q:'Analyze network strategies and make recommendations for improvements.'},
+        { A:'Programmer', Q:'Create and edit programs by converting the requirements of a project into code.'},
+        { A:'Software and Application Programmer', Q:'Develop and test new software as well as tweak and test existing programs.'},
+        { A:'Systems Analyst', Q:'Plan, implement, modify or coordinate data and information systems, to meet business needs.'},
+        { A:'Telecommunications Technical Specialist', Q:'Problem solve to update and maintain communications devices and networks.'},
+        { A:'Telecommunications Technician', Q:'Ensure that communications equipment is installed and maintained properly.'},
+        { A:'Test Analyst', Q:'Offer support and testing to create and maintain functional systems based on technology.'},
+        { A:'Web Developer', Q:'Specialize in website development, including design, structure and layout.'},
+        { A:'Software Piracy', Q:' A common violation occurs when employees copy software from their work computers for use at home.'},
+        { A:'Philippine Computer Society', Q:'the longest-existing professional association of computing and information technology professionals in the country.'},
+        { A:'Philippine Computer Society', Q:'Established in 1967, it has a long and honored history of growing the development of the ICT industry and of ICT professionals in the Philippines.'},
+        { A:'South East Asia Regional Computer Confederation', Q:'PCS is a founding member of the SEARCC, which acronym means?'},
+        { A:'Association for Computing Machinery', Q:'brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field`s challenges.'},
+        { A:'professional Code of Ethics', Q:'a set of principles designed to help professionals distinguish right from wrong in order to govern their decision-making.'}
+    ],
+    sipp_mod3 = [
+        { A:'Privacy', Q:'refers to someone’s right to keep their personal matters and relationships secret.'},
+        { A:'Internet', Q:'information would be available from the web.'},
+        { A:'Social Media', Q:'invitations to users to submit all kinds of personal information'},
+        { A:'Big Data', Q:'emerges from Internet transactions such as shopping, when being recorded by surveillance cameras in public or private spaces, or when using smartcard-based public transport payment systems.'},
+        { A:'Mobile Devices', Q:'devices that contain a range of data-generating sensors, including GPS, movement sensors, and cameras, and may transmit the resulting data via the Internet or other networks.'},
+        { A:'Internet of Things', Q:'devices that contain chips and/or are connected in the so-called?'},
+        { A:'E-government', Q:'biometric passports, online e-government services, voting systems, a variety of online citizen participation tools and platforms or online access to recordings of sessions of parliament and government committee meetings.'},
+        { A:'Surveillance', Q:'CCTVs and other camera systems.'},
+        { A:'Data Breaches', Q:'An alarming number of identity theft incidents can be traced back to data breaches involving large databases of personal information.'},
+        { A:'Discovery', Q:'part of the pretrial phase of a lawsuit in which each party can obtain evidence from the other party by various means, including requests for the production of documents.'},
+        { A:'Electronic Discovery', Q:'the collection, preparation, review, and production of electronically stored information for use in criminal and civil actions and proceedings.'},
+        { A:'Consumer Profiling', Q:'Companies openly collect personal information about users when they register at Websites, complete surveys, fill out forms, or enter contests online.'},
+        { A:'Event Data Recorder', Q:'A device that records vehicle and occupant data for a few seconds before, during, and after any vehicle crash that is severe enough to deploy the vehicle’s air bags.'},
+        { A:'Right to Privacy', Q:'It is broadly defined as “the right to be left alone”.'},
+        { A:'1987 Constitution', Q:'This Constitution of the Philippines protects against unreasonable searches and seizures, and renders inviolable the privacy of their communication and correspondence.'},
+        { A:'Anti-Wiretapping Act', Q:'It is a law which allows to some extent that the privacy of individuals may be invaded, provided that some requirements are complied with.'},
+        { A:'RA 4200', Q:'Anti-Wiretapping Law of 1965.'},
+        { A:'RA 9995', Q:'Anti-Photo and Video Voyeurism Act of 2009'},
+        { A:'RA 10175', Q:'Cybercrime Prevention Act of 2012'},
+        { A:'RA 9372', Q:'Human Security Act of 2007'},
+        { A:'Data Privacy Act', Q:'Iregulates the processing of personal information of individuals collected by both public and private entities as a way to protect one’s privacy.'}
+    ],
+    sipp_mod4 = [
+        { A:'FREEDOM OF EXPRESSION', Q:'a core human right which is guaranteed under international law and by virtually every constitutional bill of rights in the world.'},
+        { A:'Freedom from Prior Restraint or Censorship', Q:'official governmental restrictions on the press or other forms of expression in advance of actual publication or dissemination.'},
+        { A:'Discovery of Truth', Q:'The freedom of expression is essential for the search of truth.'},
+        { A:'Libel', Q:'is public and malicious imputation of a crime, or of a vice or defect, real or imaginary, or any act, omission, condition, status, or circumstance tending to cause dishonor, discredit or contempt of a natural or juridical person, or to blacken the memory of one who is dead.'},
+        { A:'Libel', Q:'committed by means of writing, printing, lithography, engraving, radio, phonograph, painting, theatrical exhibition, cinematographic exhibition, or any similar means.'},
+        { A:'Cyber Libel', Q:'is committed through a computer system or any other similar means which may be devised in the future.'},
+        { A:'Hate Speech', Q:'Persistent or malicious harassment aimed at a specific person'},
+        { A:'Anonymity on the Internet', Q:'is the expression of opinions by people who do not reveal their identity.'}
     ]
 ];
