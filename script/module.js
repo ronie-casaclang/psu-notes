@@ -1399,10 +1399,10 @@ function ModuleContent(code){
         case 'sipp_mod2': return '<h2 style="color:goldenrod"> ETHICS FOR ICT PROFESSIONALS AND ICT USERS </h2>';
         case 'sipp_mod3': return '<h2 style="color:goldenrod"> PRIVACY </h2>';
         case 'sipp_mod4': return '<h2 style="color:goldenrod"> FREEDOM OF EXPRESSION </h2>';
-        case 'sipp_mod5': return 'OVERVIEW OF ETHICS';
-        case 'sipp_mod6': return 'OVERVIEW OF ETHICS';
-        case 'sipp_mod7': return 'OVERVIEW OF ETHICS';
-        case 'sipp_mod8': return 'OVERVIEW OF ETHICS';
+        case 'sipp_mod5': return '<h2 style="color:goldenrod"> INTELLECTUAL PROPERTY </h2>';
+        case 'sipp_mod6': return '<h2 style="color:goldenrod"> CYBERCRIME </h2>';
+        case 'sipp_mod7': return '<h2 style="color:goldenrod"> SOFTWARE DEVELOPMENT </h2>';
+        case 'sipp_mod8': return '<h2 style="color:goldenrod"> SOCIAL NETWORKING </h2>';
         default: return 'Empty Module';
     }
 }
